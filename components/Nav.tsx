@@ -23,7 +23,9 @@ const Nav = () => {
           className={navStyles["main-nav__nav-container__search-container"]}
         >
           <input type="text" placeholder="Search..." />
-          <FontAwesomeIcon icon={faSearch} />
+          <button type="submit">
+            <FontAwesomeIcon icon={faSearch} />
+          </button>
         </form>
         <div className={navStyles["main-nav__nav-container__sign-in"]}>
           Sign in

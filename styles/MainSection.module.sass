@@ -1,0 +1,192 @@
+@import 'variables'
+
+.main-section
+  width: 1000px
+  max-width: 1000px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  background-color: $tertiary-color
+  margin: 0 auto
+  padding: 1rem
+  &__logo
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    height: 6rem
+    flex-basis: 100%
+    margin-bottom: 1.5rem
+    &__link
+      height: 100%
+      span
+        height: 100% !important
+        span
+          height: 100% !important
+          img
+            height: 100% !important
+  &__left-column
+    flex-basis: 16.5%
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: 1rem
+    &__ad
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: rgba(35,42,48,1)
+      &__logo
+        padding: .7rem
+        background-color: #333a3f
+      &__weapon
+        background: rgb(0,188,140)
+        background: radial-gradient(circle, rgba(0,188,140,1) -125%, rgba(35,42,48,1) 75%)
+        span
+          img
+            max-width:70% !important
+      &__text-container
+        display: flex
+        flex-direction: column
+        width: 90%
+        &__price
+          display: flex
+          justify-content: space-evenly
+          align-items: center
+          > div:first-of-type
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #fff
+            font-size: 1.6rem
+            span
+              color: $bitskins-green
+          > div:nth-of-type(2)
+            font-size: 1.2rem
+            text-transform: uppercase
+            color: #fff
+            background-color: $bitskins-blue
+            padding: .3rem .5rem
+            border-radius: 2rem
+        &__description
+          display: flex
+          flex-direction: column
+          align-items: center
+          margin-top: .5rem
+          div
+            display: flex
+            justify-content: center
+            align-items: center
+            color: $font-color
+            padding: .2rem 0
+            svg
+              color: $bitskins-green
+              margin-right: .5rem
+      &__buy-button
+        background-color: $bitskins-green
+        width: 100%
+        font-weight: 700
+        color: #fff
+        padding: .5rem 0
+        margin-top: .5rem
+        border: none
+        transition: .3s all
+        cursor: pointer
+        &:hover
+          background-color: $bitskins-green-hover
+    &__potw
+      position: relative
+      background-color: #23292f
+      overflow: hidden
+      cursor: pointer
+      transition: .25s all ease
+      &:hover
+        background-color: $primary-color
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgb(73,88,103)
+        background: linear-gradient(0deg, rgba(45,56,68,1) 10%, rgba(35,41,47,0) 50%)
+        z-index: 1
+      &__player-img
+        position: absolute
+        width: 115%
+        bottom: 0
+        left: 0
+        transform: translate(-35%,25%)
+      &__team-img
+        width: 90%
+        position: relative
+        bottom: 0
+        left: 0
+        opacity: .1
+      &__player
+        position: absolute
+        top: 8%
+        right: 5%
+        text-align: right
+        color: #fff
+        span
+          font-size: 1.9rem
+          font-weight: bold
+        p
+          font-size: 1.1rem
+          color: #9ec8f1
+      &__category-info
+        position: absolute
+        bottom: 8%
+        right: 5%
+        text-align: right
+        color: #fff
+        z-index: 1
+        span
+          font-size: 2rem
+          font-weight: bold
+        p
+          font-size: 1.1rem
+          color: #9ec8f1
+    &__ranking
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+      > p
+        color: #707070
+        font-size: 1rem
+        text-transform: uppercase
+        font-weight: bold
+        margin-bottom: .8rem
+      &__list
+        list-style: none
+        display: flex
+        flex-direction: column
+        width: 100%
+        li
+          display: flex
+          align-items: center
+          column-gap: .7rem
+          width: 100%
+          color: $font-color-hover
+          font-size: 1.3rem
+          padding: .7rem .8rem
+          background-color: rgba(45,56,68,.35)
+          border-bottom: .1rem solid $primary-color
+          &:hover
+            background-color: $secondary-color
+          div
+            width: 12%
+      &__update
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-items: center
+        row-gap: .4rem
+        background-color: #435971
+        padding: .6rem 0
+        color: $font-color
+        font-size: 1.1rem
+        cursor: pointer

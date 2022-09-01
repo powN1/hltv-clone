@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import homeStyles from "../styles/Home.module.sass";
 import Nav from "../components/Nav";
+import MainSection from "../components/MainSection";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.webp" />
       </Head>
       <Nav />
+      <MainSection />
     </div>
   );
 };
