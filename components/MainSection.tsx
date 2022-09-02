@@ -15,6 +15,8 @@ import Hub from "../components/Hub";
 import MainTopic from "../components/MainTopic";
 import News from "../components/News";
 import Matches from "../components/Matches";
+import Thread from "../components/Thread";
+import Demo from "../components/Demo";
 import MainSectionStyles from "../styles/MainSection.module.sass";
 
 const MainSection = () => {
@@ -98,7 +100,30 @@ const MainSection = () => {
       </div>
       <Matches />
 
-      <div className={MainSectionStyles["main-section__right-column"]}></div>
+      <div className={MainSectionStyles["main-section__right-column"]}>
+        <div className={MainSectionStyles["main-section__right-column__activity"]}>
+          Recent activity <span>sport</span>
+        </div>
+        <div className={MainSectionStyles["main-section__right-column__threads-container"]}>
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+          <Thread />
+        </div>
+        <p className={MainSectionStyles["main-section__right-column__latest"]}>Latest replays</p>
+        <div className={MainSectionStyles["main-section__right-column__demo-container"]}>
+          <Demo />
+          <Demo />
+          <Demo />
+          <Demo />
+        </div>
+      </div>
     </div>
   );
 };
