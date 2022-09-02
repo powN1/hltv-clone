@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import SingleNews from "./SingleNews";
 import MainSectionStyles from "../styles/MainSection.module.sass";
 

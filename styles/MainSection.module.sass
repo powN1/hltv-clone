@@ -348,8 +348,8 @@
           &:hover
             background-color: $secondary-color
           &__img-container
-            width: 4%
-            // height: 1.2rem
+            width: 1.8rem
+            height: 1.3rem
             margin: 0 1rem
             border: .1rem solid #000
           &__title
@@ -382,4 +382,145 @@
 
         &:hover
           background-color: $secondary-color
-          
+  &__matches-column
+    flex-basis: 15%
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: .6rem
+    &__matches-container
+      width: 100%
+      display: flex
+      flex-direction: column
+      background-color: $primary-color
+      box-shadow: 0 1px 1px 0 rgb(0,0,0,50%)
+      &__today
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 1rem
+        padding: .6rem
+        text-transform: uppercase
+        font-weight: bold
+        background-color: #435971
+        color: #fff
+        cursor: pointer
+      &__match:last-of-type
+        border-bottom: none
+      &__match
+        display: flex
+        flex-direction: column
+        row-gap: .7rem
+        font-size: 1.1rem
+        padding: .6rem
+        border-bottom: .1rem solid $secondary-color
+        cursor: pointer
+        &:hover
+          background-color: $secondary-color
+        &__first-team, &__second-team
+          display: flex
+          &__img-container
+            width: 1.8rem
+            height: 1.3rem
+            border: .1rem solid #000
+          &__text-container
+            width: 88%
+            display: flex
+            justify-content: space-between
+            color: $font-color-hover
+            padding-left: .2rem
+            &__score-container
+              display: flex
+              &__rounds
+              &__maps
+                margin-left: .2rem
+    &__betting-ad
+      position: relative
+      width: 100%
+      height: 14.5rem
+      background-image: url('../assets/gallery/bettingAd.jpg')
+      cursor: pointer
+      &::before
+        content: 'VS'
+        display: block
+        position: absolute
+        top: 35%
+        left: 50%
+        transform: translate(-50%,-50%)
+        color: #fff
+        font-size: 1.8rem
+        font-weight: bold
+        font-style: italic
+        opacity: .15
+      &__team, &__team2
+        position: absolute
+        top: 25%
+        left: 0
+        width: 50%
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: .7rem
+        &:hover &__img-container
+          opacity: 1
+        &:hover button
+          background-color: #ffce5b
+        &__img-container
+          width: 55%
+          opacity: .75
+        p
+          font-size: 1.2rem
+          font-weight: bold
+          color: #fff
+        button
+          background-color: #fec135
+          color: #0b1459
+          font-size: 1.2rem
+          padding: .3rem 1.4rem
+          border-radius: .6rem
+          border: none
+          cursor: pointer
+          font-weight: bold
+      &__team2
+        left: auto
+        right: 0
+    &__results-text
+      width: 100%
+      align-self: flex-start
+      display: flex
+      justify-content: space-between
+      text-transform: uppercase
+      color: #707070
+      font-weight: bold
+    &__results
+      display: flex
+      flex-direction: column
+      row-gap: .6rem
+      width: 100%
+      &__result
+        display: flex
+        flex-direction: column
+        width: 100%
+        padding: .6rem
+        row-gap: .7rem
+        background-color: $primary-color
+        box-shadow: 0 1px 1px 0 rgb(0,0,0,50%)
+        cursor: pointer
+        &:hover
+          background-color: $secondary-color
+        p
+          font-size: 1.1rem
+          color: $font-color-hover
+        &__team
+          display: flex
+          align-items: center
+          &__img-container
+            height: 1.3rem
+            width: 1.8rem
+            border: .1rem solid #000
+          p
+            flex-grow: 1
+            display: flex
+            justify-content: space-between
+            padding-left: .2rem
