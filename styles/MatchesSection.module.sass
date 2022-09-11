@@ -1,0 +1,326 @@
+@import 'variables'
+
+.matches-col
+  flex-basis: 83.56%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  row-gap: 1rem
+  column-gap: 1.4rem
+  &__guide
+    width: 100%
+    background-color: $primary-color
+    border-radius: .5rem
+    padding: .6rem
+    margin-bottom: 5rem
+    &__table
+      width: 100%
+      font-size: 1.2rem
+      color: $font-color
+      border-collapse: separate
+      border-spacing: .4rem
+      thead
+        vertical-align: middle
+        tr
+          th:first-of-type
+            text-align: left
+          th
+            padding: 0 .5rem .2rem
+      tbody
+        tr
+          background-color: #364250
+          td
+            padding: .3rem .5rem
+          td:first-of-type
+            display: flex
+            align-items: center
+            font-weight: bold
+            div
+              max-width: 2.5rem
+              max-height: 2.5rem
+              margin-right: .5rem
+          td:not(td:first-of-type)
+            font-size: 1rem
+            text-align: center
+            background-color: #435971
+            border-radius: .4rem
+            color: #fff
+            div
+              font-weight: bold
+              span
+                font-weight: normal
+  &__live-matches, &__upcoming-matches
+    display: flex
+    flex-direction: column
+    width: 60%
+    row-gap: 1rem
+    &__headline
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      color: $font-color
+      font-size: .8rem
+    &__filter
+      display: flex
+      align-items: center
+      justify-content: space-between
+      // column-gap: 1rem
+      width: 100%
+      &__category
+        width: 23.5%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        column-gap: .6rem
+        font-size: 1.2rem
+        color: rgba(146,154,158,.65)
+        font-weight: bold
+        padding: .8rem 1rem
+        border-radius: .4rem
+        background-color: $primary-color
+        svg
+          font-size: 1.4rem
+    &__live-games
+      width: 100%
+      display: flex
+      flex-direction: column
+      &__game
+        display: flex
+        flex-direction: column
+        background-color: $primary-color
+        cursor: pointer
+        &__live-match
+          display: flex
+          align-items: center
+          padding: .6rem 0
+          &:hover
+            background-color: $secondary-color
+          &__status
+            width: 12%
+            display: flex
+            flex-direction: column
+            align-items: center
+            row-gap: .3rem
+            // width: 12%
+            &__on-air
+              padding: .3rem .5rem
+              background-color: #fc1d1d
+              border-radius: .4rem
+              color: #fff
+              font-weight: bold
+              font-size: 1.1rem
+            &__tier
+              display: flex
+              justify-content: center
+              align-items: center
+              svg
+                font-size: .6rem
+                color: #aaa
+            &__length
+              background-color: rgba(0,0,0,.1)
+              padding: .3rem .7rem
+              color: rgba(146,154,158,.45)
+              border-radius: .4rem
+              font-weight: bold
+          &__teams
+            display: flex
+            flex-direction: column
+            row-gap: .4rem
+            width: 40%
+            margin-right: 2rem
+            &__team
+              display: flex
+              align-items: center
+              width: 100%
+              color: $font-color
+              &__logo
+                display: flex
+                align-items: center
+                justify-content:center
+                height: 1.6rem
+                width: 1.6rem
+                margin-right: .4rem
+              p
+                font-size: 1.1rem
+              span
+                margin-left: auto
+                font-weight: bold
+                font-size: 1.2rem
+          &__event
+            width: 38%
+            display: flex
+            align-items: center
+            &__logo
+              display: flex
+              align-items: center
+              justify-content:center
+              height: 4rem
+              width: 4rem
+              margin-right: .6rem
+            &__name
+              color: $font-color
+          &__odds
+            width: 12%
+            display: flex
+            justify-content: center
+            align-items: center
+            button
+              padding: .4rem .6rem
+              color: #fff
+              background-color: $secondary-color
+              border: none
+              border-radius: .4rem
+              font-size: 1.2rem
+              cursor: pointer
+        &__expand
+          display: flex
+          justify-content: center
+          align-items: center
+          color: $font-color-hover
+          font-size: 1.3rem
+          padding: .4rem 0
+  &__upcoming-matches
+    &__date
+      font-size: 1.6rem
+      font-weight: bold
+      color: $font-color
+      background-color: #364250
+      padding: 1rem 1.2rem
+      border-top: 1px solid #495867
+      border-bottom: 1px solid #495867
+      border-left: 3px solid #435971
+    &__live-games
+        &__game
+          &__live-match
+            &__status
+              &__time
+                color: $font-color
+                font-weight: bold
+                font-size: 1.1rem
+  &__featured-match
+    width: 38.28%
+    height: 17rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 1rem
+    background: linear-gradient(109.61deg,#364759 1.14%,#101b27)
+    position: relative
+    overflow: hidden
+    &__background-logo
+      width: 70%
+      position: absolute
+      top: 0
+      left: 0
+      opacity: .2
+    &__background-logo:nth-of-type(1)
+      transform: translate(-35%, -10%)
+    &__background-logo:nth-of-type(2)
+      left: auto
+      right: 0
+      transform: translate(35%, -10%)
+    &__time-and-rank
+      display: flex
+      justify-content: space-between
+      font-size: 1.4rem
+      color: #fff
+      font-weight: bold
+      z-index: 1
+      &__time
+        display: flex
+        flex-direction: column
+        row-gap: .4rem
+        span
+          font-size: 2rem
+      &__rank
+        color: #f0ce0e
+    &__teams
+      display: flex
+      justify-content: space-around
+      z-index: 1
+      &__team
+        width: 40%
+        display: flex
+        flex-direction: column
+        &__players
+          width: 100%
+          position: relative
+          &__player-img
+            width: 50%
+            position: absolute
+            bottom: -.2rem
+          &__player-img:first-of-type
+            left: -7%
+            z-index: 1
+          &__player-img:nth-of-type(2)
+            left: 8%
+            z-index: 2
+          &__player-img:nth-of-type(3)
+            left: 23%
+            z-index: 5
+          &__player-img:nth-of-type(4)
+            left: 38%
+            z-index: 4
+          &__player-img:nth-of-type(5)
+            left:53%
+            z-index: 3
+        &__info
+          display: flex
+          width: 100%
+          justify-content: space-between
+          align-items: center
+          background-color: #2e4156
+          &__name
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 85%
+            height: 100%
+            background-color: #f6f6f3
+            font-size: 1.4rem
+            padding: 1rem 0
+            font-weight: bold
+            color: #3a3a3a
+          &__logo
+            width: 2.2rem
+            height: 2.2rem
+            margin-right: .8rem
+            margin-left: .8rem
+  &__featured-news
+    display: flex
+    flex-direction: column
+    width: 38.28%
+    color: #929a9e
+    font-size: 1.2rem
+    font-weight: bold
+    row-gap: 1rem
+    > p
+      opacity: .65
+    &__main-news
+      display: flex
+      flex-direction: column
+      row-gap: .5rem
+    &__latest-news
+      display: flex
+      flex-direction: column
+      &__news
+        display: flex
+        padding-bottom: .5rem
+        border-bottom: .1rem solid #898989
+        &__img
+          max-width: 10rem
+          min-width: 10rem
+          margin-right: .8rem
+        &__text
+          display: flex
+          flex-direction: column
+          line-height: 1.8rem
+          font-weight: bold
+          white-space: pre-line
+          div
+            display: flex
+            font-size: 1.1rem
+            opacity: .65
+            color: #8e8e8e
+            font-weight: normal

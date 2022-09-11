@@ -7,7 +7,7 @@ import Match from "./Match";
 import Result from "./Result";
 import MainSectionStyles from "../styles/MainSection.module.sass";
 
-const Matches = () => {
+const MainSectionMatchesCol = () => {
   return (
     <div className={MainSectionStyles["main-section__matches-column"]}>
       <div className={MainSectionStyles["main-section__matches-column__matches-container"]}>
@@ -64,4 +64,4 @@ const Matches = () => {
   );
 };
 
-export default Matches;
+export default MainSectionMatchesCol;
