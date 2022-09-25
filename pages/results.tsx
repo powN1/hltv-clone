@@ -2,11 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import homeStyles from "../styles/Home.module.sass";
 import Nav from "../components/Nav";
-import MainSection from "../components/MainSection";
+import ResultsSection from "../components/ResultsSection";
 import Streams from "../components/Streams";
 import Footer from "../components/Footer";
 
-const Home: NextPage = () => {
+const Results: NextPage = () => {
   return (
     <div className={homeStyles.app}>
       <Head>
@@ -15,11 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.webp" />
       </Head>
       <Nav />
-      <MainSection />
+      <ResultsSection />
       <Streams />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Results;

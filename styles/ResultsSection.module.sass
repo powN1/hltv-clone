@@ -1,0 +1,139 @@
+@import 'variables'
+
+.results-section
+  width: 1000px
+  max-width: 1000px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  column-gap: 1.6rem
+  background-color: $tertiary-color
+  margin: 0 auto
+  padding: 1rem 1.3rem
+  &__left-column__filters
+    width: 100%
+    display: flex
+    flex-direction: column
+    background-color: rgba(35,42,48,1)
+    font-weight: bold
+    &__filters-text
+      padding: .8rem .6rem
+      font-size: 1rem
+      color: #fff
+      text-transform: uppercase
+      background-color: #435971
+    &__ranking, &__time-filter
+      &__stars, &__time
+        display: flex
+        justify-content: space-between
+        background-color: #232d38
+        color: $font-color-hover
+        font-size: 1.3rem
+        padding: .8rem
+        span
+          display: flex
+          justify-content: center
+          align-items: center
+          font-size: .7rem
+          transform: rotate(90deg)
+      &__rating-filter, &__time-span
+        display: flex
+        flex-direction: column
+        background-color: #2d3844
+        &__all, &__all-time
+          color: $font-color-hover
+          font-size: 1.3rem
+          padding: .8rem
+          border-top: 1px solid #495867
+        &__star, &__year
+          padding: .8rem
+          color: gray
+          font-size: .7rem
+          border-top: 1px dotted #495867
+        &__year
+          font-size: 1.2rem
+          font-weight: normal
+        &__input-container
+          display: flex
+          flex-direction: column
+          align-items: center
+          row-gap: .6rem
+          padding: 1rem 0
+          input
+            width: 85%
+            background-color: transparent
+            color: $font-color
+            border: .1rem solid $secondary-color
+            padding: .4rem
+  &__results-column
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-basis: 65.42%
+    &__day-container
+      display: flex
+      flex-direction: column
+      width: 100%
+      row-gap: .5rem
+      &__date
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: $font-color
+        padding-right: 1rem
+        p
+          font-size: 2.2rem
+          font-weight: bold
+        div
+          display: flex
+          column-gap: 1.8rem
+          font-size: 1.2rem
+          svg
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.2rem
+      &__result:nth-child(even)
+        background-color: #2d3844
+      &__result:nth-child(odd)
+        background-color: #232d38
+      &__result:hover
+        background-color: #424f5c
+      &__result
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        color: $font-color
+        padding: .7rem 0
+        font-size: 1.2rem
+        box-shadow: 0 .1rem .1rem 0 rgb(0 0 0 / 50%)
+        cursor: pointer
+        &__teams
+          display: flex
+          align-items: center
+          column-gap: 1.5rem
+          margin: 0 auto
+          &__team
+            display: flex
+            align-items: center
+            column-gap: .4rem
+            &__logo-container
+              max-width: 1.6rem
+          &__score
+            display: flex
+            font-weight: bold
+        &__event
+          opacity: .8
+        &__format
+          display: flex
+          flex-direction: column
+          row-gap: .3rem
+          margin: 0 1rem 0 auto
+          &__stars
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: .7rem
+          p
+            opacity: .4

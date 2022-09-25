@@ -3,6 +3,8 @@ import Head from "next/head";
 import homeStyles from "../styles/Home.module.sass";
 import Nav from "../components/Nav";
 import MatchesSection from "../components/MatchesSection";
+import Streams from "../components/Streams";
+import Footer from "../components/Footer";
 
 const Matches: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const Matches: NextPage = () => {
       </Head>
       <Nav />
       <MatchesSection />
+      <Streams />
+      <Footer />
     </div>
   );
 };
