@@ -7,7 +7,7 @@ const ResultsSectionLeftCol = () => {
   return (
     <div className={MainSectionStyles["main-section__left-column"]}>
       <LeftColAd />
-      <Filters type="results" />
+      <Filters type="events" />
     </div>
   );
 };
