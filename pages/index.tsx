@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import homeStyles from "../styles/Home.module.sass";
 import Nav from "../components/Nav";
-import MainSection from "../components/MainSection";
+import NewsSection from "../components/NewsSection";
 import Streams from "../components/Streams";
 import Footer from "../components/Footer";
 
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.webp" />
       </Head>
       <Nav />
-      <MainSection />
+      <NewsSection />
       <Streams />
       <Footer />
     </div>

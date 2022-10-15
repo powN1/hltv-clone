@@ -1,19 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import EswcImg from "../assets/gallery/eswc2014.jpg";
-import MainSectionStyles from "../styles/MainSection.module.sass";
+import LeftColumnStyles from "../styles/LeftColumn.module.sass";
 
 const Galleries = () => {
   return (
-    <div className={MainSectionStyles["main-section__left-column__galleries"]}>
+    <div className={LeftColumnStyles["left-col__galleries"]}>
       <p>Galleries</p>
-      <div className={MainSectionStyles["main-section__left-column__galleries__container"]}>
-        <a className={MainSectionStyles["main-section__left-column__galleries__container__img-container"]}>
+      <div className={LeftColumnStyles["left-col__galleries__container"]}>
+        <a className={LeftColumnStyles["left-col__galleries__container__img-container"]}>
           <Image src={EswcImg} alt="eswc tournament img" />
         </a>
-        <p className={MainSectionStyles["main-section__left-column__galleries__container__gallery-name"]}>
-          ESWC 2014 - Day Two
-        </p>
+        <p className={LeftColumnStyles["left-col__galleries__container__gallery-name"]}>ESWC 2014 - Day Two</p>
       </div>
     </div>
   );

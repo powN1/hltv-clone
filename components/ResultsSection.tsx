@@ -1,16 +1,16 @@
 import React from "react";
-import MainSectionLogo from "./MainSectionLogo";
-import ResultsSectionLeftCol from "./ResultsSectionLeftCol";
-import ResultsSectionResultsCol from "./ResultsSectionResultsCol";
-import MainSectionRightCol from "./MainSectionRightCol";
-import ResultsSectionStyles from "../styles/ResultsSection.module.sass";
+import MainSectionLogo from "./NewsSectionLogo";
+import MainSectionRightCol from "./NewsSectionRightCol";
+import LeftCol from "./LeftCol";
+import MiddleCol from "./MiddleCol";
+import NewsSectionStyles from "../styles/NewsSection.module.sass";
 
 const ResultsSection = () => {
   return (
-    <div className={ResultsSectionStyles["results-section"]}>
+    <div className={NewsSectionStyles["main-section"]}>
       <MainSectionLogo />
-      <ResultsSectionLeftCol />
-      <ResultsSectionResultsCol />
+      <LeftCol columnType="results" />
+      <MiddleCol columnType="results" />
       <MainSectionRightCol />
     </div>
   );

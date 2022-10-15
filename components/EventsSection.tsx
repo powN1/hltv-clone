@@ -1,17 +1,17 @@
 import React from "react";
-import MainSectionLogo from "./MainSectionLogo";
-import EventsSectionLeftCol from "./EventsSectionLeftCol";
-import EventsSectionEventsCol from "./EventsSectionEventsCol";
-import MainSectionRightCol from "./MainSectionRightCol";
+import MainSectionLogo from "./NewsSectionLogo";
+import LeftCol from "./LeftCol";
+import MiddleCol from "./MiddleCol";
+import NewsSectionRightCol from "./NewsSectionRightCol";
 import EventsSectionStyles from "../styles/EventsSection.module.sass";
 
 const ResultsSection = () => {
   return (
     <div className={EventsSectionStyles["events-section"]}>
       <MainSectionLogo />
-      <EventsSectionLeftCol />
-      <EventsSectionEventsCol />
-      <MainSectionRightCol />
+      <LeftCol columnType="events" />
+      <MiddleCol columnType="events" />
+      <NewsSectionRightCol />
     </div>
   );
 };

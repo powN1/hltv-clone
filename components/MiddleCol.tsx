@@ -1,0 +1,1405 @@
+import React from "react";
+import Hub from "./Hub";
+import MainTopic from "./MainTopic";
+import News from "./News";
+import Events from "./Events";
+import Image from "next/image";
+import EslLogo from "../assets/events/esl.webp";
+import IemLogo from "../assets/events/iem.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDesktop,
+  faHeadset,
+  faStar,
+  faTrophy,
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import G2Logo from "../assets/teams/g2.webp";
+import cloud9Logo from "../assets/teams/cloud9.svg";
+import furiaLogo from "../assets/teams/furia.svg";
+import G2BigLogo from "../assets/teams/g2Big.webp";
+import HeetLogo from "../assets/teams/heet.webp";
+import FazeLogo from "../assets/teams/faze.svg";
+import VitalityLogo from "../assets/teams/vitality.webp";
+import NaviLogo from "../assets/teams/Navi.svg";
+import LiquidLogo from "../assets/teams/Liquid.svg";
+import OutsidersLogo from "../assets/teams/outsiders.webp";
+import OutsidersBigLogo from "../assets/teams/outsidersBig.webp";
+import G2Monesy from "../assets/teams/players/g2Monesy.webp";
+import G2Niko from "../assets/teams/players/g2Niko.webp";
+import G2Hunter from "../assets/teams/players/g2Hunter.webp";
+import G2Hooxi from "../assets/teams/players/g2Hooxi.webp";
+import G2Jks from "../assets/teams/players/g2Jks.webp";
+import OutsidersJame from "../assets/teams/players/OutsidersJame.webp";
+import OutsidersQikert from "../assets/teams/players/OutsidersQikert.webp";
+import OutsidersFame from "../assets/teams/players/OutsidersFame.webp";
+import OutsidersNorbert from "../assets/teams/players/OutsidersNorbert.webp";
+import OutsidersFlit from "../assets/teams/players/OutsidersFlit.webp";
+import blastImg from "../assets/gallery/blastMajor.webp";
+import chelloImg from "../assets/gallery/chello.webp";
+import monesyEvent from "../assets/gallery/monesy.jpg";
+import bigEvent from "../assets/gallery/big.jpg";
+import MatchesSectionStyles from "../styles/MatchesSection.module.sass";
+import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
+
+interface MiddleColProps {
+  columnType: String;
+}
+const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
+  if (columnType === "news") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide1"] + " " + MiddleColumnStyles["news-section"]}>
+        <Hub />
+        <MainTopic />
+        <News />
+      </div>
+    );
+  } else if (columnType === "matches") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide3"] + " " + MiddleColumnStyles["matches-section"]}>
+        <div className={MiddleColumnStyles["matches-section__guide"]}>
+          <table className={MiddleColumnStyles["matches-section__guide__table"]} cellSpacing={0} cellPadding={0}>
+            <thead>
+              <tr>
+                <th>Event guide - Sep 3 - Sep 9</th>
+                <th>Sat</th>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <Image src={EslLogo} alt="esl logo" objectFit="cover" />
+                  </div>
+                  <a href="">ESL Pro league</a>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <a href="">
+                      <div>Match day</div>
+                      <div>
+                        <span>19:30</span>-<span>22:00</span>
+                      </div>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className={MiddleColumnStyles["matches-section__live-matches"]}>
+          <div className={MiddleColumnStyles["matches-section__live-matches__headline"]}>
+            <h2>Live CS:GO matches</h2>
+            <FontAwesomeIcon icon={faStar} />
+          </div>
+          <div className={MiddleColumnStyles["matches-section__live-matches__filter"]}>
+            <div className={MiddleColumnStyles["matches-section__live-matches__filter__category"]}>
+              <FontAwesomeIcon icon={faHeadset} />
+              All matches
+            </div>
+            <div className={MiddleColumnStyles["matches-section__live-matches__filter__category"]}>
+              <FontAwesomeIcon icon={faStar} />
+              Top tier
+            </div>
+            <div className={MiddleColumnStyles["matches-section__live-matches__filter__category"]}>
+              <FontAwesomeIcon icon={faDesktop} />
+              LAN
+            </div>
+            <div className={MiddleColumnStyles["matches-section__live-matches__filter__category"]}>
+              <FontAwesomeIcon icon={faTrophy} />
+              Event
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["matches-section__live-matches__live-games"]}>
+            <div className={MiddleColumnStyles["matches-section__live-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match"]}>
+                <div
+                  className={MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__status"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__status__on-air"]
+                    }
+                  >
+                    LIVE
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__status__tier"]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__status__length"]
+                    }
+                  >
+                    bo3
+                  </div>
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__teams"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__live-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={G2Logo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>G2</p>
+                    <span>13</span>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__live-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={HeetLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>HEET</p>
+                    <span>8</span>
+                  </div>
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__event"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    ESL Challenger Rotterdam 2022 South America Open Qualifier 2
+                  </div>
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__live-matches__live-games__game__live-match__odds"]}
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["matches-section__live-matches__live-games__game__expand"]}>
+                Expand
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["matches-section__featured-match"]}>
+          <div className={MiddleColumnStyles["matches-section__featured-match__background-logo"]}>
+            <Image src={G2BigLogo} alt="team logo" objectFit="cover" />
+          </div>
+          <div className={MiddleColumnStyles["matches-section__featured-match__background-logo"]}>
+            <Image src={OutsidersBigLogo} alt="team logo" objectFit="cover" />
+          </div>
+          <div className={MiddleColumnStyles["matches-section__featured-match__time-and-rank"]}>
+            <div className={MiddleColumnStyles["matches-section__featured-match__time-and-rank__time"]}>
+              <p>Featured match</p>
+              <span>19:30</span>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__featured-match__time-and-rank__rank"]}>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["matches-section__featured-match__teams"]}>
+            <div className={MiddleColumnStyles["matches-section__featured-match__teams__team"]}>
+              <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__players"]}>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={G2Niko} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={G2Hunter} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={G2Monesy} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={G2Hooxi} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={G2Jks} alt="player img" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info"]}>
+                <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info__name"]}>G2</div>
+                <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info__logo"]}>
+                  <Image src={G2Logo} alt="team logo" objectFit="cover" />
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__featured-match__teams__team"]}>
+              <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__players"]}>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={OutsidersFame} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={OutsidersFlit} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={OutsidersQikert} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={OutsidersJame} alt="player img" objectFit="cover" />
+                </div>
+                <div
+                  className={MiddleColumnStyles["matches-section__featured-match__teams__team__players__player-img"]}
+                >
+                  <Image src={OutsidersNorbert} alt="player img" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info"]}>
+                <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info__name"]}>
+                  Outsiders
+                </div>
+                <div className={MiddleColumnStyles["matches-section__featured-match__teams__team__info__logo"]}>
+                  <Image src={OutsidersLogo} alt="team logo" objectFit="cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["matches-section__upcoming-matches"]}>
+          <div className={MiddleColumnStyles["matches-section__upcoming-matches__headline"]}>
+            <h2>Upcoming CS:GO matches</h2>
+          </div>
+
+          <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games"]}>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__date"]}>
+              Current Date - Sunday xxx
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    10:00
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo1
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={G2Logo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>G2</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={HeetLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>HEET</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    ESL Challenger Rotterdam 2022 South America Open Qualifier 2
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    11:30
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo3
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={FazeLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>FaZe</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={VitalityLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Vitality</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    Pinnacle Cup 2022 RMR EU ASIA NA SA Last Chance Qualifier
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    13:00
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo1
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={NaviLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Natus Vincere</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={LiquidLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Team Liquid</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    ESL Challenger Rotterdam 2022 South America Open Qualifier 2
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games"]}>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__date"]}>
+              Current Date - Monday xxx
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    10:00
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo1
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={G2Logo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>G2</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={HeetLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>HEET</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    ESL Challenger Rotterdam 2022 South America Open Qualifier 2
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    11:30
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo3
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={FazeLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>FaZe</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={VitalityLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Vitality</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    Pinnacle Cup 2022 RMR EU ASIA NA SA Last Chance Qualifier
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game"]}>
+              <div className={MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__status"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__time"
+                      ]
+                    }
+                  >
+                    13:00
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__tier"
+                      ]
+                    }
+                  >
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "matches-section__upcoming-matches__live-games__game__live-match__status__length"
+                      ]
+                    }
+                  >
+                    bo1
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={NaviLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Natus Vincere</p>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__teams__team"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "matches-section__upcoming-matches__live-games__game__live-match__teams__team__logo"
+                        ]
+                      }
+                    >
+                      <Image src={LiquidLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Team Liquid</p>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__logo"]
+                    }
+                  >
+                    <Image src={IemLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__event__name"]
+                    }
+                  >
+                    ESL Challenger Rotterdam 2022 South America Open Qualifier 2
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["matches-section__upcoming-matches__live-games__game__live-match__odds"]
+                  }
+                >
+                  <button>Odds</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["matches-section__featured-news"]}>
+          <p>Featured News</p>
+          <div className={MiddleColumnStyles["matches-section__featured-news__main-news"]}>
+            <div className={MiddleColumnStyles["matches-section__featured-news__main-news__img"]}>
+              <Image src={chelloImg} alt="news img" objectFit="cover" />
+            </div>
+            <div className={MiddleColumnStyles["matches-section__featured-news__main-news__img"]}>
+              <Image src={blastImg} alt="news img" objectFit="cover" />
+            </div>
+          </div>
+          <p>Latest News</p>
+          <div className={MiddleColumnStyles["matches-section__featured-news__latest-news"]}>
+            <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news"]}>
+              <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news__img"]}>
+                <Image src={bigEvent} alt="news img" objectFit="cover" />
+              </div>
+              <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news__text"]}>
+                <p>BIG ease past FTW to clinch the playoffs spot in ESL Pro League Season 16.</p>
+                <div>
+                  <p>
+                    2022-09-21 - <span>14:22 </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["matches-section__featured-news__latest-news"]}>
+            <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news"]}>
+              <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news__img"]}>
+                <Image src={monesyEvent} alt="news img" objectFit="cover" />
+              </div>
+              <div className={MiddleColumnStyles["matches-section__featured-news__latest-news__news__text"]}>
+                <p>Fragadelphia 17 reaches playoffs birth for the first time.</p>
+                <div>
+                  <p>
+                    2022-09-21 - <span>14:22 </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (columnType === "results") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide2"] + " " + MiddleColumnStyles["results-section"]}>
+        <div className={MiddleColumnStyles["results-section__day-container"]}>
+          <div className={MiddleColumnStyles["results-section__day-container__date"]}>
+            <p>Results for September 25th 2022</p>
+            <div>
+              <span>1 - 100 of 70374</span>
+              <FontAwesomeIcon icon={faChevronLeft} />
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["results-section__day-container"]}>
+          <div className={MiddleColumnStyles["results-section__day-container__date"]}>
+            <p>Results for September 26th 2022</p>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["results-section__day-container__result"]}>
+            <div className={MiddleColumnStyles["results-section__day-container__result__teams"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <p>Cloud9</p>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={cloud9Logo} alt="cloud9 logo" objectFit="cover" />
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__score"]}>
+                <p>2</p>
+                <span> - </span>
+                <p>1</p>
+              </div>
+              <div className={MiddleColumnStyles["results-section__day-container__result__teams__team"]}>
+                <div
+                  className={MiddleColumnStyles["results-section__day-container__result__teams__team__logo-container"]}
+                >
+                  <Image src={furiaLogo} alt="FURIA logo" objectFit="cover" />
+                </div>
+                <p>FURIA</p>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__event"]}>
+              Esl Pro League Season 16
+            </div>
+            <div className={MiddleColumnStyles["results-section__day-container__result__format"]}>
+              <div className={MiddleColumnStyles["results-section__day-container__result__format__stars"]}>
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p>bo3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (columnType === "events") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide2"] + " " + MiddleColumnStyles["events-section"]}>
+        <div className={MiddleColumnStyles["events-section__ongoing"]}>
+          <p>Ongoing events</p>
+          <div className={MiddleColumnStyles["events-section__ongoing__options"]}>
+            <div className={MiddleColumnStyles["events-section__ongoing__options__option"]}>Featured</div>
+            <div className={MiddleColumnStyles["events-section__ongoing__options__option"]}>Today</div>
+            <div className={MiddleColumnStyles["events-section__ongoing__options__option"]}>All</div>
+          </div>
+          <div className={MiddleColumnStyles["events-section__ongoing__events"]}>
+            <Events type="events-middle" />
+            <Events type="events-middle" />
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["events-section__upcoming"]}>
+          <span>Upcoming events</span>
+          <p>October 2022</p>
+          <div className={MiddleColumnStyles["events-section__upcoming__events"]}>
+            <Events type="events-middle--detailed" />
+            <Events type="events-middle--detailed" />
+            <Events type="events-middle--detailed" />
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["events-section__events-list"]}>
+          <Events type="events-middle--detailed--horizontal" />
+          <Events type="events-middle--detailed--horizontal" />
+          <Events type="events-middle--detailed--horizontal" />
+        </div>
+      </div>
+    );
+  }
+};
+
+export default MiddleCol;

@@ -1,11 +1,11 @@
 import React from "react";
-import MainSectionStyles from "../styles/MainSection.module.sass";
+import NewsSectionStyles from "../styles/NewsSection.module.sass";
 import Hub from "./Hub";
 import MainTopic from "./MainTopic";
 import News from "./News";
 const MainSectionNewsCol = () => {
   return (
-    <div className={MainSectionStyles["main-section__news-column"]}>
+    <div className={NewsSectionStyles["main-section__news-column"]}>
       <Hub />
       <MainTopic />
       <News />

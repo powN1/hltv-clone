@@ -1,14 +1,14 @@
 import React from "react";
-import MainSectionLogo from "../components/MainSectionLogo";
-import MatchesSectionMatchesCol from "../components/MatchesSectionMatchesCol";
-import MainSectionRightCol from "../components/MainSectionRightCol";
-import MainSectionStyles from "../styles/MainSection.module.sass";
+import MainSectionLogo from "./NewsSectionLogo";
+import MainSectionRightCol from "./NewsSectionRightCol";
+import MiddleCol from "./MiddleCol";
+import NewsSectionStyles from "../styles/NewsSection.module.sass";
 
 const MatchesSection = () => {
   return (
-    <div className={MainSectionStyles["main-section"]}>
+    <div className={NewsSectionStyles["main-section"]}>
       <MainSectionLogo />
-      <MatchesSectionMatchesCol />
+      <MiddleCol columnType="matches" />
       <MainSectionRightCol />
     </div>
   );

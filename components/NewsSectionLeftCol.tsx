@@ -4,15 +4,15 @@ import PlayerOfTheWeek from "./PlayerOfTheWeek";
 import Ranking from "./Ranking";
 import Events from "./Events";
 import Galleries from "./Galleries";
-import MainSectionStyles from "../styles/MainSection.module.sass";
+import NewsSectionStyles from "../styles/NewsSection.module.sass";
 
 const MainSectionLeftCol = () => {
   return (
-    <div className={MainSectionStyles["main-section__left-column"]}>
+    <div className={NewsSectionStyles["main-section__left-column"]}>
       <LeftColAd />
       <PlayerOfTheWeek />
       <Ranking />
-      <Events />
+      <Events type="news" />
       <Galleries />
     </div>
   );
