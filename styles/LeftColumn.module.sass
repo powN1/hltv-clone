@@ -268,6 +268,25 @@
       cursor: pointer
       overflow: hidden
       transition: all .5s ease
+      &__option
+        font-weight: normal
+        padding: .8rem
+        border-bottom: .1rem dotted rgba(255,255,255, .2)
+        display: flex
+        color: rgba(146,154,158,.75)
+        &:hover
+          background-color: #4e5d6e
+          color: $font-color-hover
+        &:hover svg
+          color: $font-color-hover
+        svg
+          font-size: .7rem
+          display: flex
+          justify-content: center
+          align-items: center
+      &__option--highlighted
+        font-weight: bold
+        color: $font-color-hover
       &__title--highlighted
         font-weight: bold
         color: $font-color-hover
@@ -318,6 +337,36 @@
           width: 90%
           align-self: center
           padding: 0 0 1rem 0
+        &__option--detailed
+          display: flex
+          justify-content: space-between
+          align-items: center
+          span
+            font-weight: bold
+          &:hover
+            cursor: auto
+            color: rgba(146,154,158,.75)
+            background-color: #2d3844
+        &__option--detailed-range
+          display: flex
+          flex-direction: column
+          > div
+            display: flex
+            justify-content: space-between
+            align-items: center
+            input
+              width: 30%
+              padding: .2rem
+              color: $font-color
+              font-size: 1.2rem
+              background-color: transparent
+              border: .1rem solid $secondary-color
+              opacity: .7
+              outline: none
+          &:hover
+            cursor: auto
+            color: rgba(146,154,158,.75)
+            background-color: #2d3844
         &__range-container
             padding: 1.4rem 1rem .4rem 1rem
             width: 90%

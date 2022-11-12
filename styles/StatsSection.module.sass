@@ -1,0 +1,48 @@
+@import 'variables'
+
+.stats-section
+  width: 1000px
+  max-width: 1000px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  column-gap: 1.6rem
+  background-color: $tertiary-color
+  margin: 0 auto
+  padding: 1rem 1.3rem
+  &__filters--horizontal
+    display: flex
+    background-color: #2d3844
+    width: 100%
+    column-gap: 2rem
+    padding: .4rem
+    &__filter
+      display: flex
+      flex-direction: column
+      font-size: 1.3rem
+      color: $font-color-hover
+      cursor: pointer
+      overflow: hidden
+      transition: all .5s ease
+      &__title
+        font-size: .8rem
+        font-weight: bold
+        color: $font-color
+        text-transform: uppercase
+        z-index: 1
+        opacity: .75
+      &__select
+        background-color: transparent
+        color: $font-color-hover
+        font-weight: bold
+        font-size: 1.2rem
+        border: none
+        border-bottom: .2rem solid $secondary-color
+        outline: none
+        padding: .6rem .4rem .6rem 0
+        transition: all .2s ease
+        cursor: pointer
+        &:hover
+          background-color: #45515F
+        &__option
+  

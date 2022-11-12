@@ -37,6 +37,14 @@ const LeftCol: React.FC<LeftColProps> = ({ columnType }) => {
         <Filters type="events" />
       </div>
     );
+  } else if (columnType === "stats") {
+    return (
+      <div className={LeftColumnStyles["left-col"]}>
+        <LeftColAd />
+        <Filters type="stats--undetailed" />
+        <Filters type="stats" />
+      </div>
+    );
   }
 };
 

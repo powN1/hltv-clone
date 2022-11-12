@@ -147,43 +147,53 @@ const Events: React.FC<EventsProps> = ({ type }) => {
     );
   } else if (type === "events-middle--detailed") {
     return (
-      <div className={MiddleColumnStyles["events-section__upcoming__events__event"]}>
-        <div className={MiddleColumnStyles["events-section__upcoming__events__event__logo-container"]}>
+      <div className={MiddleColumnStyles["events-section__upcoming__events__big__event"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__logo-container"]}>
           <Image src={BlastBanner} alt="blast img" objectFit="cover" />
         </div>
-        <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container"]}>
-          <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container__title"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container__title"]}>
             Blast Premiere Fall Showdown 2022 North America
           </div>
-          <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container__details"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container__details"]}>
             <div
               className={
-                MiddleColumnStyles["events-section__upcoming__events__event__text-container__details__logo-container"]
+                MiddleColumnStyles[
+                  "events-section__upcoming__events__big__event__text-container__details__logo-container"
+                ]
               }
             >
               <Image src={EuFlag} alt="flag" objectFit="cover" />
             </div>
             <p>North America (Online)</p>
             <div
-              className={MiddleColumnStyles["events-section__upcoming__events__event__text-container__details__teams"]}
+              className={
+                MiddleColumnStyles["events-section__upcoming__events__big__event__text-container__details__teams"]
+              }
             >
               <div
                 className={
-                  MiddleColumnStyles["events-section__upcoming__events__event__text-container__details__teams__team"]
+                  MiddleColumnStyles[
+                    "events-section__upcoming__events__big__event__text-container__details__teams__team"
+                  ]
                 }
               >
                 <Image src={G2BigLogo} alt="team logo" objectFit="cover" />
               </div>
               <div
                 className={
-                  MiddleColumnStyles["events-section__upcoming__events__event__text-container__details__teams__team"]
+                  MiddleColumnStyles[
+                    "events-section__upcoming__events__big__event__text-container__details__teams__team"
+                  ]
                 }
               >
                 <Image src={HeetLogo} alt="team logo" objectFit="cover" />
               </div>
               <div
                 className={
-                  MiddleColumnStyles["events-section__upcoming__events__event__text-container__details__teams__team"]
+                  MiddleColumnStyles[
+                    "events-section__upcoming__events__big__event__text-container__details__teams__team"
+                  ]
                 }
               >
                 <Image src={FazeLogo} alt="team logo" objectFit="cover" />
@@ -191,16 +201,16 @@ const Events: React.FC<EventsProps> = ({ type }) => {
             </div>
           </div>
         </div>
-        <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container2"]}>
-          <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container2__date"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container2"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container2__date"]}>
             <p>Oct 19th - Oct 23rd</p>
             <span>Date</span>
           </div>
-          <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container2__prize"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container2__prize"]}>
             <p>$67,500</p>
             <span>Prize</span>
           </div>
-          <div className={MiddleColumnStyles["events-section__upcoming__events__event__text-container2__teams"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__big__event__text-container2__teams"]}>
             <p>8</p>
             <span>Teams</span>
           </div>
@@ -209,35 +219,45 @@ const Events: React.FC<EventsProps> = ({ type }) => {
     );
   } else if (type === "events-middle--detailed--horizontal") {
     return (
-      <div className={MiddleColumnStyles["events-section__events-list__event"]}>
-        <div className={MiddleColumnStyles["events-section__events-list__event__logo-container"]}>
+      <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__logo-container"]}>
           <Image src={EslImg} alt="esl logo" objectFit="cover" />
         </div>
-        <div className={MiddleColumnStyles["events-section__events-list__event__title"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__title"]}>
           <p>ESL Challenger League Season 42 Asia-Pacific</p>
-          <div className={MiddleColumnStyles["events-section__events-list__event__title__region-and-date"]}>
+          <div
+            className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__title__region-and-date"]}
+          >
             <div
               className={
-                MiddleColumnStyles["events-section__events-list__event__title__region-and-date__logo-container"]
+                MiddleColumnStyles[
+                  "events-section__upcoming__events__detailed__event__title__region-and-date__logo-container"
+                ]
               }
             >
               <Image src={EuFlag} alt="eu flag" objectFit="cover" />
             </div>
-            <p className={MiddleColumnStyles["events-section__events-list__event__title__region-and-date__region"]}>
+            <p
+              className={
+                MiddleColumnStyles["events-section__upcoming__events__detailed__event__title__region-and-date__region"]
+              }
+            >
               Asia (Online) | <span>Oct 18th - Oct 23rd</span>
             </p>
           </div>
         </div>
-        <div className={MiddleColumnStyles["events-section__events-list__event__details"]}>
-          <div className={MiddleColumnStyles["events-section__events-list__event__details__teams"]}>
+        <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__details"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__details__teams"]}>
             <p>8+</p>
             <p>Teams</p>
           </div>
-          <div className={MiddleColumnStyles["events-section__events-list__event__details__prize"]}>
+          <div className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__details__prize"]}>
             <p>$20,000</p>
             <p>Prize</p>
           </div>
-          <div className={MiddleColumnStyles["events-section__events-list__event__details__environment"]}>
+          <div
+            className={MiddleColumnStyles["events-section__upcoming__events__detailed__event__details__environment"]}
+          >
             <p>Online</p>
           </div>
         </div>

@@ -12,6 +12,9 @@ import {
   faHeadset,
   faStar,
   faTrophy,
+  faChartColumn,
+  faGun,
+  faBolt,
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +45,8 @@ import monesyEvent from "../assets/gallery/monesy.jpg";
 import bigEvent from "../assets/gallery/big.jpg";
 import MatchesSectionStyles from "../styles/MatchesSection.module.sass";
 import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
+import Filters from "./Filters";
+import Leaderboard from "./Leaderboard";
 
 interface MiddleColProps {
   columnType: String;
@@ -1385,17 +1390,68 @@ const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
         </div>
         <div className={MiddleColumnStyles["events-section__upcoming"]}>
           <span>Upcoming events</span>
-          <p>October 2022</p>
           <div className={MiddleColumnStyles["events-section__upcoming__events"]}>
-            <Events type="events-middle--detailed" />
-            <Events type="events-middle--detailed" />
-            <Events type="events-middle--detailed" />
+            <p>October 2022</p>
+            <div className={MiddleColumnStyles["events-section__upcoming__events__big"]}>
+              <Events type="events-middle--detailed" />
+              <Events type="events-middle--detailed" />
+              <Events type="events-middle--detailed" />
+            </div>
+            <div className={MiddleColumnStyles["events-section__upcoming__events__detailed"]}>
+              <Events type="events-middle--detailed--horizontal" />
+              <Events type="events-middle--detailed--horizontal" />
+              <Events type="events-middle--detailed--horizontal" />
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["events-section__upcoming__events"]}>
+            <p>November 2022</p>
+            <div className={MiddleColumnStyles["events-section__upcoming__events__big"]}>
+              <Events type="events-middle--detailed" />
+              <Events type="events-middle--detailed" />
+              <Events type="events-middle--detailed" />
+            </div>
+            <div className={MiddleColumnStyles["events-section__upcoming__events__detailed"]}>
+              <Events type="events-middle--detailed--horizontal" />
+              <Events type="events-middle--detailed--horizontal" />
+              <Events type="events-middle--detailed--horizontal" />
+            </div>
           </div>
         </div>
-        <div className={MiddleColumnStyles["events-section__events-list"]}>
-          <Events type="events-middle--detailed--horizontal" />
-          <Events type="events-middle--detailed--horizontal" />
-          <Events type="events-middle--detailed--horizontal" />
+      </div>
+    );
+  } else if (columnType === "stats") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide2"] + " " + MiddleColumnStyles["stats-section"]}>
+        <Filters type="stats-horizontal" />
+        <div className={MiddleColumnStyles["stats-section__quick-nav"]}>
+          <p>
+            Quick navigation <span>(Last 12 months, between top 20 teams only)</span>
+          </p>
+          <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container"]}>
+            <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container__option"]}>
+              <FontAwesomeIcon icon={faHeadset} />
+              <p>Best players</p>
+            </div>
+            <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container__option"]}>
+              <FontAwesomeIcon icon={faTrophy} />
+              <p>Top events</p>
+            </div>
+            <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container__option"]}>
+              <FontAwesomeIcon icon={faChartColumn} />
+              <p>FTU</p>
+            </div>
+            <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container__option"]}>
+              <FontAwesomeIcon icon={faGun} />
+              <p>Pistol rounds</p>
+            </div>
+            <div className={MiddleColumnStyles["stats-section__quick-nav__nav-container__option"]}>
+              <FontAwesomeIcon icon={faBolt} />
+              <p>Flashes</p>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["stats-section__leaderboards-container"]}>
+          <Leaderboard type="stats" />
         </div>
       </div>
     );
