@@ -43,6 +43,11 @@ import blastImg from "../assets/gallery/blastMajor.webp";
 import chelloImg from "../assets/gallery/chello.webp";
 import monesyEvent from "../assets/gallery/monesy.jpg";
 import bigEvent from "../assets/gallery/big.jpg";
+import forest from "../assets/gallery/forest.jpg";
+import getright from "../assets/gallery/getright.jpg";
+import luminosity from "../assets/gallery/luminosity.jpg";
+import fallen from "../assets/gallery/fallen.jpg";
+import coldzera from "../assets/gallery/coldzera.jpg";
 import MatchesSectionStyles from "../styles/MatchesSection.module.sass";
 import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
 import Filters from "./Filters";
@@ -1452,6 +1457,51 @@ const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
         </div>
         <div className={MiddleColumnStyles["stats-section__leaderboards-container"]}>
           <Leaderboard type="stats" />
+          <Leaderboard type="stats" />
+        </div>
+      </div>
+    );
+  } else if (columnType === "galleries") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide2"] + " " + MiddleColumnStyles["galleries-section"]}>
+        <p>Event gallery</p>
+        <div className={MiddleColumnStyles["galleries-section__gallery-container"]}>
+          <div className={MiddleColumnStyles["galleries-section__gallery-container__photo"]}>
+            <div className={MiddleColumnStyles["galleries-section__gallery-container__photo__picture-img"]}>
+              <Image src={forest} alt="event photo" objectFit="cover" />
+            </div>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-name"]}>
+              IEM Rio Major 2022
+            </p>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-day"]}>Day 8</p>
+          </div>
+          <div className={MiddleColumnStyles["galleries-section__gallery-container__photo"]}>
+            <div className={MiddleColumnStyles["galleries-section__gallery-container__photo__picture-img"]}>
+              <Image src={fallen} alt="event photo" objectFit="cover" />
+            </div>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-name"]}>
+              IEM Rio Major 2022
+            </p>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-day"]}>Day 7</p>
+          </div>
+          <div className={MiddleColumnStyles["galleries-section__gallery-container__photo"]}>
+            <div className={MiddleColumnStyles["galleries-section__gallery-container__photo__picture-img"]}>
+              <Image src={getright} alt="event photo" objectFit="cover" />
+            </div>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-name"]}>
+              IEM Rio Major 2022
+            </p>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-day"]}>Day 6</p>
+          </div>
+          <div className={MiddleColumnStyles["galleries-section__gallery-container__photo"]}>
+            <div className={MiddleColumnStyles["galleries-section__gallery-container__photo__picture-img"]}>
+              <Image src={coldzera} alt="event photo" objectFit="cover" />
+            </div>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-name"]}>
+              IEM Rio Major 2022
+            </p>
+            <p className={MiddleColumnStyles["galleries-section__gallery-container__photo__event-day"]}>Day 5</p>
+          </div>
         </div>
       </div>
     );

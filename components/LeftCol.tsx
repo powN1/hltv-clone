@@ -45,6 +45,14 @@ const LeftCol: React.FC<LeftColProps> = ({ columnType }) => {
         <Filters type="stats" />
       </div>
     );
+  } else if (columnType === "galleries") {
+    return (
+      <div className={LeftColumnStyles["left-col"]}>
+        <LeftColAd />
+        <Filters type="galleries--undetailed" />
+        <Filters type="galleries" />
+      </div>
+    );
   }
 };
 

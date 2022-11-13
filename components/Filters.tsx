@@ -1337,6 +1337,124 @@ const Filters: React.FC<FiltersProps> = ({ type }) => {
         </div>
       </div>
     );
+  } else if (type === "galleries--undetailed") {
+    return (
+      <div className={LeftColumnStyles["left-col__filters"]}>
+        <div className={LeftColumnStyles["left-col__filters__title"]}>Recent events</div>
+        <div className={LeftColumnStyles["left-col__filters__filter"]}>
+          <div
+            className={
+              LeftColumnStyles["left-col__filters__filter__option"] +
+              " " +
+              LeftColumnStyles["left-col__filters__filter__option--highlighted"]
+            }
+          >
+            IEM Rio Major 2022
+          </div>
+          <div className={LeftColumnStyles["left-col__filters__filter__option"]}>
+            IEM Rio Major 2022 Challengers Stage
+          </div>
+
+          <div className={LeftColumnStyles["left-col__filters__filter__option"]}>IEM Rio Major 2022 Americas RMR</div>
+          <div className={LeftColumnStyles["left-col__filters__filter__option"]}>IEM Rio Major 2022 Europe RMR A</div>
+          <div className={LeftColumnStyles["left-col__filters__filter__option"]}>ESL Pro League Season 16</div>
+        </div>
+      </div>
+    );
+  } else if (type === "galleries") {
+    return (
+      <div className={LeftColumnStyles["left-col__filters"]}>
+        <div className={LeftColumnStyles["left-col__filters__title"]}>Filters</div>
+        <div className={LeftColumnStyles["left-col__filters__filter"]}>
+          <div
+            className={LeftColumnStyles["left-col__filters__filter__title"]}
+            onClick={(e) => handleSlide(e, "event")}
+          >
+            <p
+              className={
+                isEventExpanded ? LeftColumnStyles["left-col__filters__filter__title--highlighted"] : undefined
+              }
+            >
+              Event
+            </p>
+            <span>
+              <FontAwesomeIcon
+                icon={faPlay}
+                className={isEventExpanded ? LeftColumnStyles["arrow-active"] : undefined}
+              />
+            </span>
+          </div>
+          <div
+            className={
+              isEventExpanded === true
+                ? LeftColumnStyles["left-col__filters__filter__options"]
+                : LeftColumnStyles["left-col__filters__filter__options"] + " " + LeftColumnStyles["hidden"]
+            }
+          >
+            <div className={LeftColumnStyles["left-col__filters__filter__options__input-container"]}>
+              <input type="text" placeholder="Event search" />
+            </div>
+          </div>
+        </div>
+        <div className={LeftColumnStyles["left-col__filters__filter"]}>
+          <div
+            className={LeftColumnStyles["left-col__filters__filter__title"]}
+            onClick={(e) => handleSlide(e, "player")}
+          >
+            <p
+              className={
+                isPlayerExpanded ? LeftColumnStyles["left-col__filters__filter__title--highlighted"] : undefined
+              }
+            >
+              Player
+            </p>
+            <span>
+              <FontAwesomeIcon
+                icon={faPlay}
+                className={isPlayerExpanded ? LeftColumnStyles["arrow-active"] : undefined}
+              />
+            </span>
+          </div>
+          <div
+            className={
+              isPlayerExpanded === true
+                ? LeftColumnStyles["left-col__filters__filter__options"]
+                : LeftColumnStyles["left-col__filters__filter__options"] + " " + LeftColumnStyles["hidden"]
+            }
+          >
+            <div className={LeftColumnStyles["left-col__filters__filter__options__input-container"]}>
+              <input type="text" placeholder="Player search" />
+            </div>
+          </div>
+        </div>
+        <div className={LeftColumnStyles["left-col__filters__filter"]}>
+          <div className={LeftColumnStyles["left-col__filters__filter__title"]} onClick={(e) => handleSlide(e, "team")}>
+            <p
+              className={isTeamExpanded ? LeftColumnStyles["left-col__filters__filter__title--highlighted"] : undefined}
+            >
+              Team
+            </p>
+            <span>
+              <FontAwesomeIcon
+                icon={faPlay}
+                className={isTeamExpanded ? LeftColumnStyles["arrow-active"] : undefined}
+              />
+            </span>
+          </div>
+          <div
+            className={
+              isTeamExpanded === true
+                ? LeftColumnStyles["left-col__filters__filter__options"]
+                : LeftColumnStyles["left-col__filters__filter__options"] + " " + LeftColumnStyles["hidden"]
+            }
+          >
+            <div className={LeftColumnStyles["left-col__filters__filter__options__input-container"]}>
+              <input type="text" placeholder="Team search" />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 };
 

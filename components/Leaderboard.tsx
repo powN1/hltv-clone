@@ -21,11 +21,157 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ type }) => {
             <div
               className={
                 MiddleColumnStyles[
-                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__img-container"
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture"
                 ]
               }
             >
-              <Image src={ZywooImg} alt="esl logo" objectFit="cover" />
+              <div
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture__img-container"
+                  ]
+                }
+              >
+                <Image src={ZywooImg} alt="esl logo" objectFit="cover" />
+              </div>
+            </div>
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__flag-container"
+                ]
+              }
+            >
+              <Image src={FrFlag} alt="esl logo" objectFit="cover" />
+            </div>
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container"
+                ]
+              }
+            >
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__name"
+                  ]
+                }
+              >
+                Zywoo
+              </p>
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__rating"
+                  ]
+                }
+              >
+                <span>1.27</span>
+                <span>Rating 1.0</span>
+              </p>
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__maps"
+                  ]
+                }
+              >
+                <span>1079</span>
+                <span>Maps</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className={
+              MiddleColumnStyles["stats-section__leaderboards-container__leaderboard__ranking-container__place"]
+            }
+          >
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture"
+                ]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture__img-container"
+                  ]
+                }
+              >
+                <Image src={ZywooImg} alt="esl logo" objectFit="cover" />
+              </div>
+            </div>
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__flag-container"
+                ]
+              }
+            >
+              <Image src={FrFlag} alt="esl logo" objectFit="cover" />
+            </div>
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container"
+                ]
+              }
+            >
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__name"
+                  ]
+                }
+              >
+                Zywoo
+              </p>
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__rating"
+                  ]
+                }
+              >
+                <span>1.27</span>
+                <span>Rating 1.0</span>
+              </p>
+              <p
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__text-container__maps"
+                  ]
+                }
+              >
+                <span>1079</span>
+                <span>Maps</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className={
+              MiddleColumnStyles["stats-section__leaderboards-container__leaderboard__ranking-container__place"]
+            }
+          >
+            <div
+              className={
+                MiddleColumnStyles[
+                  "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture"
+                ]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles[
+                    "stats-section__leaderboards-container__leaderboard__ranking-container__place__picture__img-container"
+                  ]
+                }
+              >
+                <Image src={ZywooImg} alt="esl logo" objectFit="cover" />
+              </div>
             </div>
             <div
               className={
