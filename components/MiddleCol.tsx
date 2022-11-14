@@ -1505,6 +1505,155 @@ const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
         </div>
       </div>
     );
+  } else if (columnType === "forums") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide2"] + " " + MiddleColumnStyles["forums-section"]}>
+        <div className={MiddleColumnStyles["forums-section__topics-container"]}>
+          <div className={MiddleColumnStyles["forums-section__topics-container__title"]}>Forum rules</div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Counter-Strike
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Discussions and questions regarding Counter-Strike and events.
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>an hour ago</p>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Fantasy
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Discussions and questions about fantasy and shared users tips.
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>a few seconds ago</p>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Betting
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Discussions and questions about betting and shared users tips.
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>19 hours ago</p>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Hardware & Tweaks
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Discussions and questions on hardware and tweaks
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>a day ago</p>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Bugs & Suggestions
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Inform about bugs and provide suggestions for HLTV.
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>2 hours ago</p>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__topics-container__topic"]}>
+            <div className={MiddleColumnStyles["forums-section__topics-container__topic__text-container"]}>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__title"]}>
+                Off Topic
+              </p>
+              <p className={MiddleColumnStyles["forums-section__topics-container__topic__text-container__description"]}>
+                Discussions and questions about everything.
+              </p>
+            </div>
+            <p className={MiddleColumnStyles["forums-section__topics-container__topic__date"]}>a few seconds ago</p>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["forums-section__rules-container"]}>
+          <div className={MiddleColumnStyles["forums-section__rules-container__rules"]}>
+            <div className={MiddleColumnStyles["forums-section__rules-container__rules__title"]}>Rules:</div>
+            <div className={MiddleColumnStyles["forums-section__rules-container__rules__text-container"]}>
+              <div className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule"]}>
+                <div
+                  className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__title"]}
+                >
+                  Dont insult others
+                </div>
+                <p
+                  className={
+                    MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__description"]
+                  }
+                >
+                  Poorlack, Burger, Favela, retard, faggot, etc.
+                </p>
+              </div>
+              <div className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule"]}>
+                <div
+                  className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__title"]}
+                >
+                  Don't spam
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__description"]
+                  }
+                >
+                  Referral links, 1st post hunt, other comments, stats etc.
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule"]}>
+                <div
+                  className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__title"]}
+                >
+                  Don't troll
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__description"]
+                  }
+                >
+                  Useless blogs, threads and posts, irrelevant posts, baiting etc.
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule"]}>
+                <div
+                  className={MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__title"]}
+                >
+                  Do as instructed
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["forums-section__rules-container__rules__text-container__rule__description"]
+                  }
+                >
+                  If asked, instructed or warned, do as told.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["forums-section__rules-container__guidelines"]}>
+            <div className={MiddleColumnStyles["forums-section__rules-container__guidelines__title"]}>Guidelines:</div>
+            <div className={MiddleColumnStyles["forums-section__rules-container__guidelines__text-container"]}>
+              <p>Act like a normal person.</p>
+              <p>The more you disagree, the nicer you should write.</p>
+              <p>When in the right context most things go, as long as you don’t violate the rules.</p>
+              <p>You are entitled to your opinion, as long as you don’t violate the rules.</p>
+              <p>You are responsible for the threads you participate in. No one can force you to join in or read it.</p>
+              <p>You are encouraged to use the report button to let us know about rule-breaking behaviour.</p>
+              <p>English only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 };
 

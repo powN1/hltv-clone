@@ -5,15 +5,15 @@ import MiddleCol from "./MiddleCol";
 import NewsSectionRightCol from "./NewsSectionRightCol";
 import StatsSectionStyles from "../styles/StatsSection.module.sass";
 
-const GalleriesSection = () => {
+const ForumsSection = () => {
   return (
     <div className={StatsSectionStyles["stats-section"]}>
       <MainSectionLogo />
-      <LeftCol columnType="galleries" />
-      <MiddleCol columnType="galleries" />
+      <LeftCol columnType="forums" />
+      <MiddleCol columnType="forums" />
       <NewsSectionRightCol />
     </div>
   );
 };
 
-export default GalleriesSection;
+export default ForumsSection;

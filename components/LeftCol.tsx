@@ -12,7 +12,7 @@ interface LeftColProps {
 }
 
 const LeftCol: React.FC<LeftColProps> = ({ columnType }) => {
-  if (columnType === "news") {
+  if (columnType === "news" || columnType === "forums") {
     return (
       <div className={LeftColumnStyles["left-col"]}>
         <LeftColAd />

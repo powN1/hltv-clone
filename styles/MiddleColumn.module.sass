@@ -862,3 +862,77 @@
         font-size: 1.2rem
       &__event-day
         bottom: 5%
+.forums-section
+  display: flex
+  flex-direction: column
+  row-gap: 1rem
+  &__topics-container, &__rules-container
+    display: flex
+    flex-direction: column
+  &__topics-container
+    color: $font-color
+    &__title
+      text-align: right
+      font-size: 1rem
+      text-transform: uppercase
+      font-weight: bold
+      padding: .8rem
+      background-color: #364250
+    &__topic
+      padding: 1.2rem .8rem
+      display: flex
+      background-color: $primary-color
+      border-top: .1rem solid #495867
+      &__text-container
+        display: flex
+        flex-direction: column
+        row-gap: .4rem
+        flex-grow: 1
+        font-size: 1.4rem
+        cursor: pointer
+        &__title
+          color: $font-color-hover
+          font-weight: bold
+      &__date
+        font-size: 1.1rem
+        text-align: right
+  &__rules-container
+    display: flex
+    flex-direction: column
+    row-gap: 1.5rem
+    padding: 2rem
+    background-color: $primary-color
+    color: $font-color
+    &__rules, &__guidelines
+      display: flex
+      flex-direction: column
+      row-gap: 1.5rem
+      &__title
+        font-size: 1.7rem
+        font-weight: bold
+        text-transform: uppercase
+        border-bottom: .3rem solid #435971
+    &__rules
+      &__text-container
+        display: flex
+        flex-direction: column
+        row-gap: 1.5rem
+        &__rule
+          display: flex
+          flex-direction: column
+          row-gap: 1.5rem
+          font-size: 1.3rem
+          &__title
+            font-weight: bold
+          &__description
+            display: list-item
+            margin-left: 3rem
+    &__guidelines
+      &__text-container
+        display: flex
+        flex-direction: column
+        row-gap: 1rem
+        font-size: 1.3rem
+        p
+          display: list-item
+          margin-left: 3rem
