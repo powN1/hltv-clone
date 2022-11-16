@@ -48,6 +48,7 @@ import getright from "../assets/gallery/getright.jpg";
 import luminosity from "../assets/gallery/luminosity.jpg";
 import fallen from "../assets/gallery/fallen.jpg";
 import coldzera from "../assets/gallery/coldzera.jpg";
+import bettingBackground from "../assets/gallery/bcBg.jpg";
 import MatchesSectionStyles from "../styles/MatchesSection.module.sass";
 import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
 import Filters from "./Filters";
@@ -1649,6 +1650,395 @@ const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
               <p>You are responsible for the threads you participate in. No one can force you to join in or read it.</p>
               <p>You are encouraged to use the report button to let us know about rule-breaking behaviour.</p>
               <p>English only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (columnType === "betting") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide4"] + " " + MiddleColumnStyles["betting-section"]}>
+        <div className={MiddleColumnStyles["betting-section__menu"]}>
+          <div
+            className={
+              MiddleColumnStyles["betting-section__menu__option"] +
+              " " +
+              MiddleColumnStyles["betting-section__menu__option--highlighted"]
+            }
+          >
+            Betting analytics
+          </div>
+          <div className={MiddleColumnStyles["betting-section__menu__option"]}>Compare odds</div>
+          <div className={MiddleColumnStyles["betting-section__menu__option"]}>CS:GO betting</div>
+          <div className={MiddleColumnStyles["betting-section__menu__option"]}>Betting sites</div>
+          <div className={MiddleColumnStyles["betting-section__menu__option"]}>Betting guides</div>
+        </div>
+        <div className={MiddleColumnStyles["betting-section__bets-container"]}>
+          <div className={MiddleColumnStyles["betting-section__bets-container__header"]}>
+            <div className={MiddleColumnStyles["betting-section__bets-container__header__background"]}>
+              <Image src={bettingBackground} alt="cs background" objectFit="cover" />
+            </div>
+            <p className={MiddleColumnStyles["betting-section__bets-container__header__title"]}>
+              Analytics & Insights for upcoming CS:GO matches
+            </p>
+            <p className={MiddleColumnStyles["betting-section__bets-container__header__description"]}>
+              Our Analytics section provides important details and insights on upcoming matches for your CS:GO betting
+              endeavours.
+            </p>
+          </div>
+          <div className={MiddleColumnStyles["betting-section__bets-container__bets"]}>
+            <p>18+ | Graj odpowiedzialnie | Obowiązuje regulamin | Treści marketingowe</p>
+            <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet"]}>
+              <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__top"]}>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__top__category"]}>
+                  <div
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__bets__bet__top__category__img-container"]
+                    }
+                  >
+                    <Image src={NaviLogo} alt="event logo" objectFit="cover" />
+                  </div>
+                  <p>Elisa Masters Espoo</p>
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__top__category"]}>
+                  Best odds
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__top__category"]}>
+                  Rank / Form
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__top__category"]}>
+                  Insights
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle"]}>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__format"]}>
+                  BO1 15:30
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__teams"]}>
+                  <div
+                    className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__teams__team"]}
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__teams__team__img-container"
+                        ]
+                      }
+                    >
+                      <Image src={NaviLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Big</p>
+                  </div>
+                  <div
+                    className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__teams__team"]}
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__teams__team__img-container"
+                        ]
+                      }
+                    >
+                      <Image src={NaviLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                    <p>Havu</p>
+                  </div>
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__odds"]}></div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__rank"]}>
+                  <p className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__rank__place"]}>
+                    #13
+                  </p>
+                  <div
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__rank__last-matches"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__rank__last-matches__match"
+                        ]
+                      }
+                    ></div>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__rank__last-matches__match"
+                        ]
+                      }
+                    ></div>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__rank__last-matches__match"
+                        ]
+                      }
+                    ></div>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__rank__last-matches__match"
+                        ]
+                      }
+                    ></div>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__middle__rank__last-matches__match"
+                        ]
+                      }
+                    ></div>
+                  </div>
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights"]}>
+                  <div
+                    className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team"]}
+                  >
+                    <p
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__name"]
+                      }
+                    >
+                      Big
+                    </p>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__pro"
+                          ]
+                        }
+                      >
+                        +
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        Big has better form ranking
+                      </p>
+                    </div>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__pro"
+                          ]
+                        }
+                      >
+                        +
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        BIG is the bookmaker favorite with the best odds
+                      </p>
+                    </div>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__con"
+                          ]
+                        }
+                      >
+                        -
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        BIG is playing with stand-in: faveN instead of syrsoN
+                      </p>
+                    </div>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__pro"
+                          ]
+                        }
+                      >
+                        +
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        BIG is better ranked (#14)
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team"]}
+                  >
+                    <p
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__name"]
+                      }
+                    >
+                      Havu
+                    </p>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__pro"
+                          ]
+                        }
+                      >
+                        +
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        HAVU has won 3 out of the last 5 matches
+                      </p>
+                    </div>
+                    <div
+                      className={
+                        MiddleColumnStyles["betting-section__bets-container__bets__bet__middle__insights__team__advice"]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__con"
+                          ]
+                        }
+                      >
+                        -
+                      </div>
+                      <p
+                        className={
+                          MiddleColumnStyles[
+                            "betting-section__bets-container__bets__bet__middle__insights__team__advice__text"
+                          ]
+                        }
+                      >
+                        HAVU is worse ranked (#66)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom"]}>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom__title"]}>
+                  User prediction
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom__prediction"]}>
+                  <div
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom__prediction__teams"]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__bets__bet__bottom__prediction__teams__team"
+                        ]
+                      }
+                    >
+                      <Image src={NaviLogo} alt="team logo" objectFit="cover" />
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom__prediction__bar"]
+                    }
+                  ></div>
+                </div>
+                <div className={MiddleColumnStyles["betting-section__bets-container__bets__bet__bottom__analysis"]}>
+                  Full match analysis
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites"]}>
+            <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__site"]}>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__site__top"]}>
+                <div
+                  className={MiddleColumnStyles["betting-section__bets-container__betting-sites__site__top__bookmaker"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__site__top__bookmaker__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={NaviLogo} alt="bookmaker logo" objectFit="cover" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__site__top__bookmaker__bookmaker__name"
+                      ]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__betting-sites__site__top__bookmaker__bookmaker__name__title"
+                        ]
+                      }
+                    >
+                      eWinner
+                    </div>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "betting-section__bets-container__betting-sites__site__top__bookmaker__bookmaker__name__rating"
+                        ]
+                      }
+                    >
+                      <FontAwesomeIcon icon={faStar} />
+                      <FontAwesomeIcon icon={faStar} />
+                      <FontAwesomeIcon icon={faStar} />
+                      <FontAwesomeIcon icon={faStar} />
+                      <FontAwesomeIcon icon={faStar} />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
