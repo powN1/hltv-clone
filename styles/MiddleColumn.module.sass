@@ -943,7 +943,6 @@
   display: flex
   flex-direction: column
   align-items: center
-  background-color: gray
   color: $font-color
   &__menu
     display: flex
@@ -971,10 +970,12 @@
         width: 100%
         background-color: #435971
   &__bets-container
-    width: 97%
+    padding: 0 1.5rem
     display: flex
     justify-content: center
     flex-wrap: wrap
+    column-gap: 3%
+    background-color: #364250
     &__header
       display: flex
       flex-direction: column
@@ -1008,3 +1009,299 @@
         font-weight: bold
       &__description
         font-size: 1.15rem
+    &__bets
+      width: 65%
+      display: flex
+      flex-direction: column
+      row-gap: 1rem
+      align-items: center
+      &__bet
+        display: flex
+        flex-direction: column
+        box-shadow: 0 .1rem .1rem 0 rgb(0 0 0 / 50%)
+        &__top
+          display: flex
+          &__category
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: .4rem
+            border-right: 1px solid #495867
+            &__img-container
+              width: 10%
+          &__category:first-child
+            width: 19rem
+            column-gap: .6rem
+            justify-self: flex-start
+          &__category:nth-child(2)
+            width: 6.5rem
+          &__category:nth-child(3)
+            width: 7.1rem
+          &__category:nth-child(4)
+            border-right: none
+        &__middle
+          display: flex
+          position: relative
+          background-color: $primary-color
+          &__format
+            width: 8.1rem
+            height: 2rem
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: 1rem
+            top: 50%
+            transform: translate(-50%, -50%) rotate(-90deg)
+            color: #fff
+            background-color: #435971
+            font-size: .9rem
+          &__teams
+            margin-left: 2rem
+            display: flex
+            flex-direction: column
+            border-right: .1rem solid #495867
+            border-bottom: .1rem solid #495867
+            &__team:last-of-type
+              border-bottom: none
+            &__team
+              display: flex
+              align-items: center
+              height: 4rem
+              border-bottom: .1rem dotted #495867
+              &__name
+                height: 100%
+                display: flex
+                align-items: center
+                column-gap: .6rem
+                width: 17rem
+                padding-left: .8rem
+                border-right: .1rem solid #495867
+                p
+                  font-size: 1.4rem
+                  font-weight: bold
+                &__img-container
+                  width: 13%
+              &__odds
+                width: 6.5rem
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                border-right: .1rem solid #495867
+                &__text
+                  padding: .4rem 1.5rem
+                  border-radius: 1rem
+                  font-size: 1.2rem
+                  background-color: #26303c
+              &__rank
+                height: 100%
+                width: 7rem
+                display: flex
+                flex-direction: column
+                justify-content: center
+                row-gap: .4rem
+                align-items: center
+                &__place
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  font-size: 1.3rem
+                &__last-matches
+                  display: flex
+                  column-gap: .2rem
+                  &__match
+                    padding: .3rem
+                    border-radius: 100%
+                    background-color: green
+          &__insights
+            position: relative
+            flex-grow: 1
+            padding: .8rem
+            max-height: 8rem
+            overflow: hidden
+            z-index: 1
+            &:hover
+              overflow: visible
+              z-index: 2
+            &:hover &__container::after
+              z-index: -1
+            &:hover &__container
+            &__container
+              display: flex
+              padding: .6rem
+              background-color: #26303C
+              border-radius: .3rem
+              // box-shadow: 0 0 0 0 transparent
+              // z-index: 0
+              &::after
+                z-index: 4
+                display: block
+                content: "Hover to expand"
+                height: 40px
+                left: 0
+                width: 100%
+                position: absolute
+                bottom: 0
+                background: linear-gradient(180deg,rgba(45,56,68,0),#2d3844)
+                text-align: center
+                font-size: 8px
+                font-weight: 700
+                color: #929a9e
+                line-height: 56px
+              &__team
+                display: flex
+                flex-direction: column
+                width: 45%
+                row-gap: .4rem
+                &__name
+                  text-transform: uppercase
+                  font-weight: bold
+                  font-size: .7rem
+                &__advice
+                  position: relative
+                  display: flex
+                  flex-direction: row-reverse
+                  column-gap: .4rem
+                  line-height: 1.6rem
+                  white-space: normal
+                &__advice--for
+                  &::after
+                    content: "+"
+                    background-color: #09c100
+                    position: relative
+                    top: .3rem
+                    flex: 0 0 1.1rem
+                    height: 1.1rem
+                    width: 1.1rem
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: .4rem
+                    color: #fff
+                &__advice--against
+                  &::after
+                    content: "-"
+                    background-color: #fc1d1d
+                    position: relative
+                    top: .3rem
+                    flex: 0 0 1.1rem
+                    height: 1.1rem
+                    width: 1.1rem
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: .4rem
+                    color: #fff
+              &__team:nth-last-of-type(1)
+                text-align: right
+                > div
+                  flex-direction: row   
+        &__bottom
+          display: flex
+          flex-direction: column
+          row-gap: .8rem
+          padding: .8rem .6rem
+          background-color: $primary-color
+          border-bottom-right-radius: .3rem
+          border-bottom-left-radius: .3rem
+          &__title
+            font-size: 1.3rem
+          &__prediction
+            display: flex
+            flex-direction: column
+            &__teams
+              display: flex
+              justify-content: space-between
+              &__team
+                width: 3%
+                margin: 0 1rem
+            &__bar
+              position: relative
+              height: .3rem
+              background-color: hsla(0,0%,50.2%,.3)
+              display: flex
+              margin-top: .2rem
+              &__team
+                width: 35%
+                height: 100%
+              &__team--favorite
+                background-color: #00cd00
+                width: 65%
+          &__analysis
+            align-self: flex-start
+            padding: .6rem .8rem
+            margin: .4rem 0
+            font-size: 1.3rem
+            background-color: #435971
+            font-weight: bold
+            border-radius: .3rem
+            color: #fff
+    &__betting-sites
+      width: 32%
+      display: flex
+      flex-direction: column
+      &__sites
+        display: flex
+        flex-direction: column
+        row-gap: 1rem
+        &__bookmaker
+          display: flex
+          flex-direction: column
+          &__top
+            display: flex
+            flex-direction: column
+            row-gap: 1rem
+            background-color: $primary-color
+            padding: .8rem
+            &__info
+              display: flex
+              align-items: center
+              column-gap: 1rem
+              margin-top: .6rem
+              &__img-container
+                width: 20%
+                span
+                  border-radius: .4rem
+              &__text-container
+                display: flex
+                flex-direction: column
+                row-gap: .2rem
+                p
+                  font-size: 1.6rem
+                  font-weight: bold
+                &__rating
+                  display: flex
+                  column-gap: .1rem
+                  svg
+                    font-size: .8rem
+                    color: #f0ce0e
+                  svg:last-of-type
+                    color: $font-color
+            &__review
+              padding: .8rem 0
+              text-align: center
+              font-size: 1.3rem
+              border: .1rem solid #435971
+              color: $font-color-hover
+              border-radius: .3rem
+              font-weight: bold
+          &__bottom
+            background-color: #333F4D
+            padding: .8rem
+            &__pros
+              display: grid
+              grid-template-columns: .5fr .5fr
+              grid-gap: .8rem
+              &__pro
+                display: flex
+                align-items: center
+                column-gap: .7rem
+                color: #f1f4f7
+                line-height: 1.4rem
+                font-size: 1.1rem
+                svg
+                  color: #08A500
+                  font-size: 1.4rem
+
+
