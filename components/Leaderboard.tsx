@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
-import FrFlag from "../assets/flags/FR.webp";
+import FrFlag from "../assets/flags/fr.webp";
 import ZywooImg from "../assets/teams/players/vitZywoo.webp";
 
 interface LeaderboardProps {

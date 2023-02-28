@@ -18,7 +18,14 @@ import {
   faChevronRight,
   faChevronLeft,
   faCheck,
+  faUpRightAndDownLeftFromCenter,
 } from "@fortawesome/free-solid-svg-icons";
+import { faTwitch } from "@fortawesome/free-brands-svg-icons";
+import astralisLogo from "../assets/teams/astralis.svg";
+import bigLogo from "../assets/teams/big.svg";
+import complexityLogo from "../assets/teams/complexity.svg";
+import enceLogo from "../assets/teams/ence.svg";
+import fnaticLogo from "../assets/teams/fnatic.svg";
 import G2Logo from "../assets/teams/g2.webp";
 import cloud9Logo from "../assets/teams/cloud9.svg";
 import furiaLogo from "../assets/teams/furia.svg";
@@ -26,7 +33,7 @@ import G2BigLogo from "../assets/teams/g2Big.webp";
 import HeetLogo from "../assets/teams/heet.webp";
 import FazeLogo from "../assets/teams/faze.svg";
 import VitalityLogo from "../assets/teams/vitality.webp";
-import NaviLogo from "../assets/teams/Navi.svg";
+import NaviLogo from "../assets/teams/navi.svg";
 import LiquidLogo from "../assets/teams/Liquid.svg";
 import OutsidersLogo from "../assets/teams/outsiders.webp";
 import OutsidersBigLogo from "../assets/teams/outsidersBig.webp";
@@ -41,7 +48,11 @@ import OutsidersFame from "../assets/teams/players/OutsidersFame.webp";
 import OutsidersNorbert from "../assets/teams/players/OutsidersNorbert.webp";
 import OutsidersFlit from "../assets/teams/players/OutsidersFlit.webp";
 import blastImg from "../assets/gallery/blastMajor.webp";
+import blastLogo from "../assets/events/blast.webp";
 import chelloImg from "../assets/gallery/chello.webp";
+import frenchFlag from "../assets/flags/fr.webp";
+import germanFlag from "../assets/flags/de.webp";
+import polishFlag from "../assets/flags/pl.webp";
 import monesyEvent from "../assets/gallery/monesy.jpg";
 import bigEvent from "../assets/gallery/big.jpg";
 import forest from "../assets/gallery/forest.jpg";
@@ -50,6 +61,12 @@ import luminosity from "../assets/gallery/luminosity.jpg";
 import fallen from "../assets/gallery/fallen.jpg";
 import coldzera from "../assets/gallery/coldzera.jpg";
 import ewinner from "../assets/bookmakers/ewinner.png";
+import bombDefusedScorebot from "../assets/scorebot/bomb_defused.svg";
+import bombExplodedScorebot from "../assets/scorebot/bomb_exploded.svg";
+import ctWinScorebot from "../assets/scorebot/ct_win.svg";
+import dashScorebot from "../assets/scorebot/dash.svg";
+import stopwatchScorebot from "../assets/scorebot/stopwatch.svg";
+import tWinScorebot from "../assets/scorebot/t_win.svg";
 import bettingBackground from "../assets/gallery/bcBg.jpg";
 import MatchesSectionStyles from "../styles/MatchesSection.module.sass";
 import MiddleColumnStyles from "../styles/MiddleColumn.module.sass";
@@ -2725,6 +2742,2056 @@ const MiddleCol: React.FC<MiddleColProps> = ({ columnType }) => {
                   </div>
                 </div>
               </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__sites__reviews"]}>
+                See all bookmaker reviews
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides"]}>
+              <p className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__title"]}>
+                CS:GO Betting guides
+              </p>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide"]}>
+                <div
+                  className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__top__background-img"
+                      ]
+                    }
+                  >
+                    <Image src={bettingBackground} alt="bookmaker img" layout="fill" />
+                  </div>
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top__title"]
+                    }
+                  >
+                    How To Break A CS:GO Betting Losing Streak
+                  </p>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom"]
+                  }
+                >
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom__text"]
+                    }
+                  >
+                    In this guide to CS:GO betting, we discuss how bettors can go about breaking a losing streak with…
+                  </p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__bottom__read-more"
+                      ]
+                    }
+                  >
+                    Read more
+                  </div>
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide"]}>
+                <div
+                  className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__top__background-img"
+                      ]
+                    }
+                  >
+                    <Image src={bettingBackground} alt="bookmaker img" layout="fill" />
+                  </div>
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top__title"]
+                    }
+                  >
+                    Best CS:GO Betting Strategy
+                  </p>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom"]
+                  }
+                >
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom__text"]
+                    }
+                  >
+                    Best CS:GO betting strategy & staking method At the heart of every betting strategy is a solid
+                    staking method. A…
+                  </p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__bottom__read-more"
+                      ]
+                    }
+                  >
+                    Read more
+                  </div>
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide"]}>
+                <div
+                  className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top"]}
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__top__background-img"
+                      ]
+                    }
+                  >
+                    <Image src={bettingBackground} alt="bookmaker img" layout="fill" />
+                  </div>
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__top__title"]
+                    }
+                  >
+                    How To Bet on CS:GO
+                  </p>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom"]
+                  }
+                >
+                  <p
+                    className={
+                      MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__guide__bottom__text"]
+                    }
+                  >
+                    Where to place your CS:GO bets In this section, you can find some of the best CS:GO betting sites
+                    out…
+                  </p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "betting-section__bets-container__betting-sites__guides__guide__bottom__read-more"
+                      ]
+                    }
+                  >
+                    Read more
+                  </div>
+                </div>
+              </div>
+              <div className={MiddleColumnStyles["betting-section__bets-container__betting-sites__guides__see-all"]}>
+                See all betting guides
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["betting-section__bets-container__how-to"]}>
+            <h2>How to use CS:GO betting analytics section</h2>
+            <p>
+              The analytics section should be your first stop if you want a quick overview of upcoming matches for{" "}
+              <a>CS:GO betting</a>. However, before using it effectively, we suggest checking out some of the{" "}
+              <a>best sites for CS:GO betting</a> and learning more about the practice via our{" "}
+              <a>expansive guides section</a>.
+            </p>
+            <p>
+              Using the CS:GO betting analytics section at HLTV is as easy as taking advantage of the insights and
+              details before placing a wager. In this section, we provide you with the following information:
+            </p>
+            <ul>
+              <li>The teams competing in a match.</li>
+              <li>
+                Match start time, so you don’t miss out on <a>Live Betting opportunities</a>.
+              </li>
+              <li>
+                The best <a>CS:GO betting odds</a> are available from bookmakers in your region.
+              </li>
+              <li>
+                Teams’ current form and <a>World Ranking</a>.
+              </li>
+              <li>Links to the full Match Analysis pages.</li>
+              <li>
+                Insights about both teams competing, sharing positives and negatives before a specific match gets
+                underway.
+              </li>
+            </ul>
+            <p>
+              Please note that <span>HLTV is not responsible</span> for any losses incurred. Gamble responsibly and at
+              your own risk. The CS:GO betting analytics section only provides insights and can’t predict the outcomes
+              of matches.
+            </p>
+            <h2>CS:GO betting strategies to use with analytics</h2>
+            <p>
+              Using the insights in the analytics section can help users spot <a>CS:GO betting opportunities</a>. It can
+              also help bettors plan their day and not miss out on the exciting Live Betting practice.
+            </p>
+            <p>
+              Consider some strategies that users can employ while using the CS:GO betting analytics section below. You
+              can also find a link to each guide and a short description.
+            </p>
+            <ul>
+              <li>
+                <a>Best CS:GO Betting Strategy on a Budget</a> – We discuss the best CS:GO betting strategy for gambling
+                enthusiasts on a strict budget, from the optimal staking method to general tips and the best bookmakers
+                to use.
+              </li>
+              <li>
+                <a>High Reward CS:GO Betting Strategy</a> – This guide explains what a high reward CS:GO betting
+                strategy looks like, including the types of bets, essential tips, and the best sites (bookmakers) to
+                employ this strategy type.
+              </li>
+              <li>
+                <a>CS:GO LAN Event Betting Strategy</a> – In this guide, we discuss the unique aspects of CS:GO LAN
+                event betting, potential strategies to use, tips and the best sites for this betting endeavour.
+              </li>
+              <li>
+                <a>Top Tier CS:GO Event Betting Strategy</a> – This guide discusses the intricacies of top tier CS:GO
+                event betting, focusing on tips and tricks to possibly use when placing wagers on the biggest
+                tournaments.
+              </li>
+              <li>
+                <a>CS:GO Low Betting</a> – In this guide, we explore CS:GO low betting options by explaining the
+                practice and detailing the best bet types to use. We also share essential tips to stretch a limited
+                budget and pinpoint the best sites to place low bets with ease.
+              </li>
+            </ul>
+            <p>
+              For even more strategies and specific topics such as <a>Special Bets</a>, FAQ and more, check out our
+              dedicated <a>CS:GO Betting Guides section</a> filled to the brim with content.
+            </p>
+            <h2>Practice Responsible Gambling</h2>
+            <p>
+              Learn more about <a>practising responsible CS:GO gambling and take the Gamalyze self-assessment test</a>.
+              Further, you can check out our articles on how gambling addiction can develop, time management and money
+              management.
+            </p>
+            <ul>
+              <li>
+                <a>Time management and responsible gambling</a> – This guide focuses on time management essentials while
+                practising responsible CS:GO esports gambling.
+              </li>
+              <li>
+                <a>Money management tips for gambling</a> – In this article, various methods that can be applied to
+                prevent problem gambling will be presented. The techniques presented in this article are related to
+                “money management”.
+              </li>
+              <li>
+                <a>HLTV supports responsible gambling</a> – Learn about responsible gambling, how gambling addiction
+                could occur, the causes and stages of development.
+              </li>
+            </ul>
+            <p>Always practice responsible gambling. Full bookmaker full T&Cs apply. You must be 18+ to play.</p>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (columnType === "live") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide4"] + " " + MiddleColumnStyles["live-section"]}>
+        <div className={MiddleColumnStyles["live-section__live-container"]}>
+          <div className={MiddleColumnStyles["live-section__live-container__top-bar"]}>
+            <button className={MiddleColumnStyles["live-section__live-container__top-bar__fullscreen-button"]}>
+              <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter} />
+              Fullscreen
+            </button>
+            <a className={MiddleColumnStyles["live-section__live-container__top-bar__link"]}>Theater</a>
+          </div>
+          <div className={MiddleColumnStyles["live-section__live-container__stream-container"]}>
+            <div className={MiddleColumnStyles["live-section__live-container__stream-container__video-container"]}>
+              <iframe
+                src="https://player.twitch.tv/?channel=esl_csgo&parent=localhost"
+                frameborder="0"
+                scrolling="no"
+              ></iframe>
+            </div>
+            <div className={MiddleColumnStyles["live-section__live-container__stream-container__matches-container"]}>
+              <div
+                className={
+                  MiddleColumnStyles["live-section__live-container__stream-container__matches-container__twitch-chat"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles[
+                    "live-section__live-container__stream-container__matches-container__scroll-container"
+                  ]
+                }
+              >
+                <div
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stream-container__matches-container__scroll-container__event"
+                    ]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stream-container__matches-container__scroll-container__event__name"
+                      ]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "live-section__live-container__stream-container__matches-container__scroll-container__event__name__img-container"
+                        ]
+                      }
+                    >
+                      <Image src={EslLogo} alt="team logo" />
+                    </div>
+                    ESL Pro League season 17
+                    <FontAwesomeIcon icon={faChevronRight} />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stream-container__matches-container__scroll-container__event__match"
+                      ]
+                    }
+                  >
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "live-section__live-container__stream-container__matches-container__scroll-container__event__match__info"
+                        ]
+                      }
+                    >
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div>
+                                <Image src={furiaLogo} alt="team logo" />
+                              </div>
+                              FURIA
+                            </td>
+                            <td>16</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div>
+                                <Image src={G2Logo} alt="team logo" />
+                              </div>
+                              G2
+                            </td>
+                            <td>14</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "live-section__live-container__stream-container__matches-container__scroll-container__event__match__info__stream-selector"
+                          ]
+                        }
+                      >
+                        <p>Stream</p>
+                        <div>
+                          <select>
+                            <option>ESL Official</option>
+                            <option>BLAST</option>
+                            <option>ru zoneR</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={
+                  MiddleColumnStyles["live-section__live-container__stream-container__matches-container__sub-nav"]
+                }
+              >
+                <div>Livescore</div>
+                <div>
+                  <FontAwesomeIcon icon={faTwitch} />
+                  Chat
+                </div>
+              </div>
+              <div
+                className={
+                  MiddleColumnStyles["live-section__live-container__stream-container__matches-container__sponsor-bar"]
+                }
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <td>
+                        <div>
+                          <Image src={furiaLogo} alt="g2 logo" />
+                        </div>
+                      </td>
+                      <td>
+                        <div>
+                          <Image src={G2Logo} alt="g2 logo" />
+                        </div>
+                      </td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["live-section__live-container__stats-container"]}>
+            <div className={MiddleColumnStyles["live-section__live-container__stats-container__team1"]}>
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team1__team-info"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["live-section__live-container__stats-container__team1__team-info__img-container"]
+                  }
+                >
+                  <Image src={G2BigLogo} alt="team logo" />
+                </div>
+                <p>G2</p>
+              </div>
+
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team1__scoreboard"]}>
+                <table
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team2__scoreboard__table--counter-terrorists"
+                    ]
+                  }
+                >
+                  <thead>
+                    <tr>
+                      <td>Player</td>
+                      <td>Money</td>
+                      <td>Kills</td>
+                      <td>Assists</td>
+                      <td>Deaths</td>
+                      <td>ADR</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>NiKo</td>
+                      <td>$3200</td>
+                      <td>20</td>
+                      <td>2</td>
+                      <td>7</td>
+                      <td>103.2</td>
+                    </tr>
+                    <tr>
+                      <td>hUnter-</td>
+                      <td>$4250</td>
+                      <td>18</td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>105.0</td>
+                    </tr>
+                    <tr>
+                      <td>m0nesy</td>
+                      <td>$50</td>
+                      <td>16</td>
+                      <td>1</td>
+                      <td>7</td>
+                      <td>79.3</td>
+                    </tr>
+                    <tr>
+                      <td>jks</td>
+                      <td>$1250</td>
+                      <td>12</td>
+                      <td>2</td>
+                      <td>10</td>
+                      <td>71.0</td>
+                    </tr>
+                    <tr>
+                      <td>HooXi</td>
+                      <td>$7000</td>
+                      <td>9</td>
+                      <td>3</td>
+                      <td>8</td>
+                      <td>67.8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team1__scorebot"]}>
+                <div
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT"
+                    ]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT"
+                    ]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team1__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={MiddleColumnStyles["live-section__live-container__stats-container__team2"]}>
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team2__scoreboard"]}>
+                <table
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team2__scoreboard__table--terrorists"
+                    ]
+                  }
+                >
+                  <thead>
+                    <tr>
+                      <td>Player</td>
+                      <td>Money</td>
+                      <td>Kills</td>
+                      <td>Assists</td>
+                      <td>Deaths</td>
+                      <td>ADR</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>KSCERATO</td>
+                      <td>$1300</td>
+                      <td>16</td>
+                      <td>1</td>
+                      <td>10</td>
+                      <td>98.0</td>
+                    </tr>
+                    <tr>
+                      <td>yuurih</td>
+                      <td>$500</td>
+                      <td>9</td>
+                      <td>2</td>
+                      <td>7</td>
+                      <td>71.0</td>
+                    </tr>
+                    <tr>
+                      <td>drop</td>
+                      <td>$0</td>
+                      <td>8</td>
+                      <td>1</td>
+                      <td>10</td>
+                      <td>68.4</td>
+                    </tr>
+                    <tr>
+                      <td>arT</td>
+                      <td>$200</td>
+                      <td>7</td>
+                      <td>2</td>
+                      <td>8</td>
+                      <td>67.6</td>
+                    </tr>
+                    <tr>
+                      <td>saffee</td>
+                      <td>$100</td>
+                      <td>3</td>
+                      <td>0</td>
+                      <td>14</td>
+                      <td>52.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team2__team-info"]}>
+                <div
+                  className={
+                    MiddleColumnStyles["live-section__live-container__stats-container__team2__team-info__img-container"]
+                  }
+                >
+                  <Image src={furiaLogo} alt="team logo" />
+                </div>
+                <p>FURIA</p>
+              </div>
+              <div className={MiddleColumnStyles["live-section__live-container__stats-container__team2__scorebot"]}>
+                <div
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT"
+                    ]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles[
+                      "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT"
+                    ]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={ctWinScorebot} alt="defuser img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={stopwatchScorebot} alt="stopwatch img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "live-section__live-container__stats-container__team2__scorebot__roundHistoryLineCT__icon"
+                      ]
+                    }
+                  >
+                    <Image src={dashScorebot} alt="dash img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  } else if (columnType === "fantasy") {
+    return (
+      <div className={MiddleColumnStyles["middle-col--wide4"] + " " + MiddleColumnStyles["fantasy-section"]}>
+        <div
+          className={MiddleColumnStyles["fantasy-section__season"] + " " + MiddleColumnStyles["fantasy-section__card"]}
+        >
+          <h1>Fantasy Spring season 2023</h1>
+          <div
+            className={
+              MiddleColumnStyles["fantasy-section__season__container"] +
+              " " +
+              MiddleColumnStyles["fantasy-section__card__container"]
+            }
+          >
+            <div
+              className={
+                MiddleColumnStyles["fantasy-section__season__container__progress-bar"] +
+                " " +
+                MiddleColumnStyles["fantasy-section__card__container__progress-bar"]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+            </div>
+            <div
+              className={
+                MiddleColumnStyles["fantasy-section__season__container__events-container"] +
+                " " +
+                MiddleColumnStyles["fantasy-section__card__container__events-container"]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__events-container__show-months"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__events-container__show-months"]
+                }
+              >
+                <button>Show earlier months</button>
+              </div>
+              <h3>
+                February 2023<span>3 games (3 finisehd)</span>
+              </h3>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__events-container__events"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__events-container__events"]
+                }
+              >
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__season__container__events-container__events__event"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={IemLogo} alt="iem logo" />
+                  </div>
+                  <p>IEM Katowice 2023 Play-In</p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__winner"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event__winner"]
+                    }
+                  >
+                    <p>janko_0</p>
+                    <span>Winner</span>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__season__container__events-container__events__event"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={IemLogo} alt="iem logo" />
+                  </div>
+                  <p>IEM Katowice 2023 Group stage</p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__winner"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event__winner"]
+                    }
+                  >
+                    <p>janko_0</p>
+                    <span>Winner</span>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__season__container__events-container__events__event"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={IemLogo} alt="iem logo" />
+                  </div>
+                  <p>IEM Katowice 2023 Group stage</p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event__winner"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event__winner"]
+                    }
+                  >
+                    <p>janko_0</p>
+                    <span>Winner</span>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__season__container__events-container__events__event--big"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event--big"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event--big__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event--big__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={EslLogo} alt="event logo" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event--big__info"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event--big__info"]
+                    }
+                  >
+                    <p>CCT Central Europe Malta Finals</p>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "fantasy-section__season__container__events-container__events__event--big__info__logos"
+                        ] +
+                        " " +
+                        MiddleColumnStyles[
+                          "fantasy-section__card__container__events-container__events__event--big__info__logos"
+                        ]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={NaviLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={FazeLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={cloud9Logo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={furiaLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={OutsidersBigLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={G2BigLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__season__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={HeetLogo} alt="team logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__season__container__events-container__events__event--big__right-button"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event--big__right-button"
+                      ]
+                    }
+                  >
+                    <button
+                      className={
+                        MiddleColumnStyles[
+                          "fantasy-section__season__container__events-container__events__event--big__right-button__button--play"
+                        ] +
+                        " " +
+                        MiddleColumnStyles[
+                          "fantasy-section__card__container__events-container__events__event--big__right-button__button--play"
+                        ]
+                      }
+                    >
+                      Play now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__season__container__events-container__show-months"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__events-container__show-months"]
+                }
+              >
+                <button>Show coming months</button>
+              </div>
+              <div
+                className={MiddleColumnStyles["fantasy-section__season__container__events-container__end-of-season"]}
+              >
+                <FontAwesomeIcon icon={faTrophy} />
+                <p>End of season</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={MiddleColumnStyles["fantasy-section__partner"] + " " + MiddleColumnStyles["fantasy-section__card"]}
+        >
+          <h1>Fantasy Spring partner 2023</h1>
+          <div
+            className={
+              MiddleColumnStyles["fantasy-section__partner__container"] +
+              " " +
+              MiddleColumnStyles["fantasy-section__card__container"]
+            }
+          >
+            <div
+              className={
+                MiddleColumnStyles["fantasy-section__partner__container__progress-bar"] +
+                " " +
+                MiddleColumnStyles["fantasy-section__card__container__progress-bar"]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__line"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__line"]
+                }
+              ></div>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__progress-bar__circle"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__progress-bar__circle"]
+                }
+              ></div>
+            </div>
+            <div
+              className={
+                MiddleColumnStyles["fantasy-section__partner__container__events-container"] +
+                " " +
+                MiddleColumnStyles["fantasy-section__card__container__events-container"]
+              }
+            >
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__events-container__show-months"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__events-container__show-months"]
+                }
+              >
+                <button>Show earlier months</button>
+              </div>
+              <h3>
+                February 2023<span>3 games (3 finisehd)</span>
+              </h3>
+              <div
+                className={
+                  MiddleColumnStyles["fantasy-section__partner__container__events-container__events"] +
+                  " " +
+                  MiddleColumnStyles["fantasy-section__card__container__events-container__events"]
+                }
+              >
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__partner__container__events-container__events__event"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={IemLogo} alt="iem logo" />
+                  </div>
+                  <p>IEM Brasil 2023 Europe Closed Qualifier</p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event__winner"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event__winner"]
+                    }
+                  >
+                    <p>janko_0</p>
+                    <span>Winner</span>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__partner__container__events-container__events__event"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={IemLogo} alt="iem logo" />
+                  </div>
+                  <p>ESL Impact Katowice 2023</p>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event__winner"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event__winner"]
+                    }
+                  >
+                    <p>janko_0</p>
+                    <span>Winner</span>
+                  </div>
+                </div>
+                <div
+                  className={
+                    MiddleColumnStyles["fantasy-section__partner__container__events-container__events__event--big"] +
+                    " " +
+                    MiddleColumnStyles["fantasy-section__card__container__events-container__events__event--big"]
+                  }
+                >
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event--big__img-container"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event--big__img-container"
+                      ]
+                    }
+                  >
+                    <Image src={blastLogo} alt="event logo" />
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event--big__info"
+                      ] +
+                      " " +
+                      MiddleColumnStyles["fantasy-section__card__container__events-container__events__event--big__info"]
+                    }
+                  >
+                    <p>CCT Central Europe Malta Finals</p>
+                    <div
+                      className={
+                        MiddleColumnStyles[
+                          "fantasy-section__partner__container__events-container__events__event--big__info__logos"
+                        ] +
+                        " " +
+                        MiddleColumnStyles[
+                          "fantasy-section__card__container__events-container__events__event--big__info__logos"
+                        ]
+                      }
+                    >
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={astralisLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={complexityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={fnaticLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={bigLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={enceLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={LiquidLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={VitalityLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={NaviLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={FazeLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={cloud9Logo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={furiaLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={OutsidersBigLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={G2BigLogo} alt="team logo" />
+                      </div>
+                      <div
+                        className={
+                          MiddleColumnStyles[
+                            "fantasy-section__partner__container__events-container__events__event--big__info__logos__img-container"
+                          ] +
+                          " " +
+                          MiddleColumnStyles[
+                            "fantasy-section__card__container__events-container__events__event--big__info__logos__img-container"
+                          ]
+                        }
+                      >
+                        <Image src={HeetLogo} alt="team logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      MiddleColumnStyles[
+                        "fantasy-section__partner__container__events-container__events__event--big__right-button"
+                      ] +
+                      " " +
+                      MiddleColumnStyles[
+                        "fantasy-section__card__container__events-container__events__event--big__right-button"
+                      ]
+                    }
+                  >
+                    <button
+                      className={
+                        MiddleColumnStyles[
+                          "fantasy-section__partner__container__events-container__events__event--big__right-button__button--live"
+                        ] +
+                        " " +
+                        MiddleColumnStyles[
+                          "fantasy-section__card__container__events-container__events__event--big__right-button__button--live"
+                        ]
+                      }
+                    >
+                      Live
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={MiddleColumnStyles["fantasy-section__partner__container__events-container__partner-games"]}
+              >
+                <h3>Partner games</h3>
+                <p>Partner games do not count towards the season leaderboard, but each game has their own prizes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={MiddleColumnStyles["fantasy-section__leaderboards"]}>
+          <div className={MiddleColumnStyles["fantasy-section__leaderboards__selection"]}>
+            <div className={MiddleColumnStyles["fantasy-section__leaderboards__selection__option"]}>
+              Spring season 2023 leaderboard
+            </div>
+            <div className={MiddleColumnStyles["fantasy-section__leaderboards__selection__option"]}>
+              Celebtriy leaderboard
+            </div>
+          </div>
+          <div className={MiddleColumnStyles["fantasy-section__leaderboards__container"]}>
+            <h2>Spring season 2023 fantasy leaderboard</h2>
+            <div className={MiddleColumnStyles["fantasy-section__leaderboards__container__results"]}>
+              <table>
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>User</td>
+                    <td>Games</td>
+                    <td>Winnings</td>
+                    <td>Points</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#1</td>
+                    <td>
+                      <div>
+                        <Image src={frenchFlag} alt="country flag" />
+                      </div>
+                      Jacobse
+                    </td>
+                    <td>4/4 games</td>
+                    <td>
+                      <div>$5,000</div>
+                    </td>
+                    <td>71</td>
+                  </tr>
+                  <tr>
+                    <td>#2</td>
+                    <td>
+                      <div>
+                        <Image src={germanFlag} alt="country flag" />
+                      </div>
+                      pes0man
+                    </td>
+                    <td>4/4 games</td>
+                    <td>
+                      <div>$2,000</div>
+                    </td>
+                    <td>69</td>
+                  </tr>
+                  <tr>
+                    <td>#3</td>
+                    <td>
+                      <div>
+                        <Image src={polishFlag} alt="country flag" />
+                      </div>
+                      Fetorinho0o
+                    </td>
+                    <td>4/4 games</td>
+                    <td>
+                      <div>$1,000</div>
+                    </td>
+                    <td>68</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

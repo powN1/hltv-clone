@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import EslImg from "../assets/events/esl.webp";
-import IemImg from "../assets/events/Iem.webp";
+import IemImg from "../assets/events/iem.webp";
 import BlastBanner from "../assets/events/blastBanner.jpg";
-import BlastImg from "../assets/events/Blast.webp";
+import BlastImg from "../assets/events/blast.webp";
 import G2BigLogo from "../assets/teams/g2Big.webp";
 import HeetLogo from "../assets/teams/heet.webp";
 import FazeLogo from "../assets/teams/faze.svg";
